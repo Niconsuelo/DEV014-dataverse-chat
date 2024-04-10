@@ -52,7 +52,7 @@ export default [
     "imageUrl": "https://i.ibb.co/nmyhYmr/wp7109874.jpg",
     "facts": {
       "nenType": "Emisor",
-      "ocupation": "Cazdor",
+      "ocupation": "Cazador",
       "species": "Humano",
     },
     "extraInfo": {
