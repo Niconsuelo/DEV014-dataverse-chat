@@ -1,4 +1,4 @@
-import { computeStats, filterData, sortData } from "./dataFunctions.js";
+import { computeStats, filterData, sortData } from "./lib/dataFunctions.js";
 import { renderItems } from "./views/renderCards.js";
 import data from "./data/dataset.js";
 
