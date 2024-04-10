@@ -1,5 +1,5 @@
 import { computeStats, filterData, sortData } from "./dataFunctions.js";
-import { renderItems } from "./view.js";
+import { renderItems } from "./views/renderCards.js";
 import data from "./data/dataset.js";
 
 const searchRoot = document.querySelector("#root");
