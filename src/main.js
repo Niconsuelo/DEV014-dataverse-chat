@@ -1,9 +1,12 @@
+// esto deberia ir en home porque pertenece a la vista inicial que es HOME.
+
 import { computeStats, filterData, sortData } from "./lib/dataFunctions.js";
-import { renderItems } from "./views/renderCards.js";
+
 import data from "./data/dataset.js";
+import { cards } from "./components/Cards.js";
 
 const searchRoot = document.querySelector("#root");
-searchRoot.appendChild(renderItems(data));
+searchRoot.appendChild(cards(data));
 
 const selectfilterOcupation = document.querySelector("#filter-ocupation");
 const nenSelect = document.querySelector("#select-filter");
@@ -23,7 +26,7 @@ selectfilterOcupation.addEventListener("change", function (event) {
   }
   const root = document.querySelector("#root");
   root.innerHTML = "";
-  searchRoot.appendChild(renderItems(result));
+  searchRoot.appendChild(cards(result));
 });
 
 nenSelect.addEventListener("change", (e) => {
@@ -38,7 +41,7 @@ nenSelect.addEventListener("change", (e) => {
     result = sortData(result, "name", sortSelection);
   }
   searchRoot.innerHTML = "";
-  searchRoot.appendChild(renderItems(result));
+  searchRoot.appendChild(cards(result));
 });
 
 sortSelect.addEventListener("change", function (event) {
@@ -55,7 +58,7 @@ sortSelect.addEventListener("change", function (event) {
   const originalData = Array.from(result);
   const sortCards = sortData(originalData, "name", sortOrder);
   searchRoot.innerHTML = "";
-  searchRoot.appendChild(renderItems(sortCards));
+  searchRoot.appendChild(cards(sortCards));
 });
 
 const cleanerButton = document.querySelector("#cleaner-button");
@@ -64,7 +67,7 @@ cleanerButton.addEventListener("click", () => {
   nenSelect.value = "";
   sortSelect.value = "";
   searchRoot.innerHTML = "";
-  searchRoot.appendChild(renderItems(data));
+  searchRoot.appendChild(cards(data));
 });
 
 const statButton = document.querySelector("#stats-button");
@@ -72,18 +75,3 @@ statButton.addEventListener("click", function () {
   window.location.href = "index.html#stats-h";
 });
 
-const statsSection = document.querySelector("#stats-section");
-const computeNenStats = computeStats(data);
-statsSection.innerHTML = `
-<h4 id="stats-h">Cantidad de personajes por tipo de Nen</h4>
-<div class="stats-box">
-<dl> 
-  <dt>Intensificación: </dt><dd>${computeNenStats.Intensificador}</dd>
-  <dt>Transmutación: </dt><dd>${computeNenStats.Transmutador}</dd>
-  <dt>Materialización: </dt><dd>${computeNenStats.Materializador}</dd>
-</dl><dl>  
-  <dt>Emisión: </dt><dd>${computeNenStats.Emisor}</dd>
-  <dt>Manipulación: </dt><dd>${computeNenStats.Manipulador}</dd>
-  <dt>Especialización: </dt><dd>${computeNenStats.Especialista}</dd>
-</dl>
-</div>`;
