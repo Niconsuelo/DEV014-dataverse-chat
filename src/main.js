@@ -1,7 +1,6 @@
 // esto deberia ir en home porque pertenece a la vista inicial que es HOME.
 
 import { computeStats, filterData, sortData } from "./lib/dataFunctions.js";
-
 import data from "./data/dataset.js";
 import { cards } from "./components/Cards.js";
 
