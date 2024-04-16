@@ -9,11 +9,12 @@ let ROUTES = {};
 let rootEl;
 
 //el contiene el div
-export const setRootEl = (el) => {
+export const setRootEl = (el) => {   
   rootEl = el;
 };
-//asigna a ROUTES el parametro de entrada routes
-export const setRoutes = (routes) => {
+
+//asigna a ROUTES el parametro de entrada routes, routes tiene todas las rutas
+export const setRoutes = (routes) => { 
   // optional Throw errors if routes isn't an object
   // optional Throw errors if routes doesn't define an /error route
   // assign ROUTES
@@ -27,7 +28,9 @@ const queryStringToObject = (queryString) => {
   const query = new URLSearchParams(queryString);
   // recorre queryparams
   // convert URLSearchParams to an object
+
   const newObject = {};
+
   for (const [key, value] of query) {
     //console.log(`${key}: ${value}`);
     newObject[key] = value;
@@ -72,8 +75,11 @@ export const navigateTo = (pathname, props = {}) => {
 //transforma url en una vista con sus props correspondiente que son los queryparams
 export const onURLChange = (location) => {
   // parse (modificacion de algo para que funcione algo)
+
   // parse the location for the pathname and search params -->
+
   //cuales son los parametros de mi url y
+
   //quiero saber cual URL tengo que ir cuando se haga una accion en la vista o recargo vista
 
   //dividi el stirng de url
@@ -84,6 +90,7 @@ export const onURLChange = (location) => {
   //obtuve queryparams
   const paramsFound = locationSplit[1];
   // convert the search params to an object
+
   const objectParams = queryStringToObject(paramsFound);
 
   console.log(objectParams);
