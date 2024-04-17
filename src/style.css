@@ -32,6 +32,10 @@ header {
   margin-bottom: 0%;
 }
 
+nav {
+  background-color: #000000;
+}
+
 .filter-bar {
   margin-top: 2%;
   padding: 2%;

@@ -6,6 +6,7 @@
 import { onURLChange, setRootEl, setRoutes } from "./router.js";
 import Home from "./views/Home.js";
 import Error from "./views/Error.js";
+import { button } from "./components/button.js";
 
 
 //Ejemplo de definición de rutas:
@@ -23,6 +24,11 @@ TODO:
 
 //se ejecuta la funcion setRoutes con el parametro routes(son las rutas de las vistas)
 setRoutes(routes);
+
+const nav = document.getElementById('nav');
+nav.appendChild(button('chat grupal'));
+
+
 
 // Set the root element where views will be rendered
 window.addEventListener("DOMContentLoaded", () => {

@@ -20,13 +20,34 @@ const Home = (props) => {
   //viewEl.textContent = `Welcome to the home page! ${props.bella}`;
 
   const newSection = document.createElement("section");
+  newSection.id = 'stats-section';
+  
   const renderStats = stats(dataset);
   newSection.innerHTML = renderStats;
   viewEl.appendChild(newSection);
+
+
+const searchID = newSection.querySelector('#stats-section');
+
+if(searchID){
+    searchID.addEventListener('click', function(){
+        console.log(searchID)
+
+    });
+}
+//   const statButton = document.querySelector("");
+//   const searchID = statButton.querySelector('#')
+//   statButton.addEventListener("click", function () {
+
+//     if (statButton) {
+//         // Asegura un desplazamiento suave hasta la sección
+//         statsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
  
   
   return viewEl;
 };
-
+  //});
+//}
 export default Home;
+
