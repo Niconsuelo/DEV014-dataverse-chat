@@ -60,7 +60,6 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: none;
   color: #0e0e0e;
   font-size: 1rem;
   gap: 1%;
@@ -109,7 +108,7 @@ button {
 }
 
 ul {
-  margin: 3%;
+  margin: 0% 3% 3%;
   gap: 5%;
   padding: 2%;
   display: flex;
@@ -299,7 +298,7 @@ footer {
   }
 
   nav {
-    justify-content: center;
+    justify-content: flex-end;
 
   }
 
