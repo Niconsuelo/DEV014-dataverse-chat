@@ -13,13 +13,17 @@ Introduce aquí tu API Key
 </p>
 <input class= 'input-api-key'/>
 </div>
- <button class="button-api-key">INGRESAR</button>
+ <button id='button-api-key' class="button-api-key">INGRESAR</button>
 </div> 
 </div>
    
 `;
 
   viewEl.innerHTML = viewApiKey;
+  const buttonApiKey = viewEl.querySelector("#button-api-key");
+  buttonApiKey.addEventListener("click", function () {
+    alert("holax");
+  });
 
   return viewEl;
 };
