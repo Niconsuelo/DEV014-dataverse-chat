@@ -8,6 +8,8 @@ export const setApiKey = (key) => {
   //3. Al método pasarle el parámetro key que es el valor del input
   //4. Para este método no necesitamos retornar nada, sólo guardar.
   localStorage.setItem('api-input', key); // 'api-input' es la key y 'key' es el value
+  
+  return null; // *** ESTE RETURN LO AGREGAMOS NETAMENTE PARA FUNCIONAMIENTO DE TEST ***
 };
 
 export const getApiKey = () => {
