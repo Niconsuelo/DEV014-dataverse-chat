@@ -5,6 +5,7 @@ import { cards } from "../components/Cards.js";
 import { filterBar } from "../components/filterBar.js";
 import { stats } from "../components/stats.js";
 import dataset from "../data/dataset.js";
+import { getApiKey } from "../lib/apiKey.js";
 import { filterData, sortData } from "../lib/dataFunctions.js";
 
 const Home = (props) => {
@@ -95,6 +96,8 @@ const Home = (props) => {
   newSection.innerHTML = renderStats;
   viewEl.appendChild(newSection);
   
+  console.log(getApiKey()); // PRUEBA DE QUE EFECTIVAMENTE FUNCIONA EL MÉTODO getItem().
+
   return viewEl;
 };
 
