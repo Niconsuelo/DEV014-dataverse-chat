@@ -94,6 +94,7 @@ const Home = (props) => {
   const renderStats = stats(dataset);
   newSection.innerHTML = renderStats;
   viewEl.appendChild(newSection);
+
   
   return viewEl;
 };

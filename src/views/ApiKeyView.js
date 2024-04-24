@@ -1,4 +1,4 @@
-//import { setApiKey } from "apiKey.js";
+import { setApiKey } from "../lib/apiKey.js";
 
 const ApiKey = () => {
   const viewEl = document.createElement("div");

@@ -78,7 +78,7 @@ export const onURLChange = (location) => {
 
   //dividi el stirng de url
   const locationSplit = location.split("?");
-  console.log(locationSplit);
+  //console.log(locationSplit);
   //obtuve la ruta
   const routeFound = locationSplit[0];
   //obtuve queryparams

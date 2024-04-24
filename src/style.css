@@ -47,7 +47,11 @@ nav {
 }
 
 .g-chat-button {
-  background-image: linear-gradient(rgba(251, 248, 248, 1), rgba(197, 191, 191, 2), rgba(253, 253, 253, 1));
+  background-image: linear-gradient(
+    rgba(251, 248, 248, 1),
+    rgba(197, 191, 191, 2),
+    rgba(253, 253, 253, 1)
+  );
   color: #0e0e0e;
 }
 
@@ -76,7 +80,7 @@ button {
   padding: 0.5%;
   font-family: inherit;
   font-size: inherit;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   color: #0e0e0e;
 }
 
@@ -212,21 +216,21 @@ span {
 }
 
 h4 {
-padding: 2%;
-margin: 0%;
-height: fit-content;
-width: 100%;
-text-transform: uppercase;
-font-weight: bolder;
-font-size: 1.5em;
-letter-spacing: 2px;
-color: whitesmoke;
-text-shadow: 0px 0px 14px #ffffff;
-background-color: #000000;
+  padding: 2%;
+  margin: 0%;
+  height: fit-content;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  color: whitesmoke;
+  text-shadow: 0px 0px 14px #ffffff;
+  background-color: #000000;
 
-/* background-color: #3f1fb1de; */
-/* background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Bn-3VF2OtmhcC8KC93J9lg/1200x675mf.jpg"); */
-/* background-repeat: no-repeat;
+  /* background-color: #3f1fb1de; */
+  /* background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Bn-3VF2OtmhcC8KC93J9lg/1200x675mf.jpg"); */
+  /* background-repeat: no-repeat;
 background-size: cover; */
 }
 
@@ -239,10 +243,10 @@ background-size: cover; */
   flex-direction: column;
   text-align: center;
 }
- 
+
 .stats-box {
   margin: 0%;
-  width:auto;
+  width: auto;
   height: fit-content;
   display: flex;
   justify-content: space-around;
@@ -279,7 +283,6 @@ footer {
   line-height: 50px;
 }
 .view-api-key {
-
   background-image: url("https://i.ibb.co/p25RZTp/fondo-mapa-tesoro-antiguo-blanco-935589-3122-1.jpg");
   background-size: 100% 100%;
   height: 100vh;
@@ -288,7 +291,7 @@ footer {
   align-items: center;
 }
 
-.form-api-key{
+.form-api-key {
   width: 388px;
   height: 588px;
   color: black;
@@ -301,10 +304,9 @@ footer {
   gap: 20px;
   border-style: solid;
   border-width: 0.5px;
- 
 }
 
-.body-api-key{
+.body-api-key {
   gap: 100px;
 }
 
@@ -312,34 +314,39 @@ footer {
   width: 80%;
 }
 
-.button-api-key{
-  background-image: linear-gradient(rgba(251, 248, 248, 1), rgba(197, 191, 191, 2), rgba(253, 253, 253, 1));
-   color: #0e0e0e;
-   width: 50%;
-   height: 8%;
-   border-radius: 10px;
- }
+.button-api-key {
+  background-image: linear-gradient(
+    rgba(251, 248, 248, 1),
+    rgba(197, 191, 191, 2),
+    rgba(253, 253, 253, 1)
+  );
+  color: #0e0e0e;
+  width: 50%;
+  height: 8%;
+  border-radius: 10px;
+}
 
- .container-chat{
+.container-chat {
   display: flex;
-
   justify-content: center;
   flex-direction: row;
+  background-color: #ececec;
 }
-.img-character{
-   width:110px;
-    height:110px;
-    border-radius:150px;
-    background-color: #037E8C;
-    display:flex;
-    align-items:baseline;
-    margin: 1%;
+.img-character {
+  width: 110px;
+  height: 110px;
+  border-radius: 150px;
+  background-image: url("https://i.ibb.co/W2JKSz3/image.png");
+  object-fit: contain;
+  display: flex;
+  align-items: baseline;
+  margin: 1%;
+  background-size: cover; /* Ajusta esto a 'contain' si deseas ver toda la imagen sin cortes */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat;
 }
-
-
 
 .view-api-key {
-
   background-image: url("https://i.ibb.co/p25RZTp/fondo-mapa-tesoro-antiguo-blanco-935589-3122-1.jpg");
   background-size: 100% 100%;
   height: 100vh;
@@ -349,14 +356,16 @@ footer {
   padding: 10%;
 }
 
-
 .input-chat-individual {
-  width: 690%;
-  height: 40px;
-   border-radius: 14px;
+  width: 480%;
+  height: 60px;
+  border-radius: 14px;
 }
 
-
+.text-chat {
+  text-align: left;
+  padding-top: 45px;
+}
 
 @media (max-width: 600px) {
   /* 600px es un punto de ruptura común para mobile */
@@ -369,7 +378,8 @@ footer {
   
     }*/
   select,
-  button, #stats-button {
+  button,
+  #stats-button {
     width: 100%;
     text-align: center;
     margin: 2%;
@@ -377,7 +387,6 @@ footer {
 
   nav {
     justify-content: flex-end;
-
   }
 
   .g-chat-button {
@@ -397,12 +406,11 @@ footer {
     border-radius: 90px;
   }
 
-  .view-api-key{
+  .view-api-key {
     height: 640px;
     margin: 0 auto;
   }
   .input-chat-individual {
-    width: 200%;
+    width: 160%;
   }
-
-};
+}
