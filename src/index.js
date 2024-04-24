@@ -6,7 +6,7 @@
 import { onURLChange, setRootEl, setRoutes } from "./router.js";
 import Home from "./views/Home.js";
 import Error from "./views/Error.js";
-import ApiKeyView from "./views/ApiKey.js";
+import ApiKeyView from "./views/ApiKeyView.js";
 
 
 //Ejemplo de definición de rutas:
