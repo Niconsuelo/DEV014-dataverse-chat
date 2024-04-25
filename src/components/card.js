@@ -23,6 +23,11 @@ export const card = (character) => {
   clickCharacter.innerHTML = li;
 
   clickCharacter.addEventListener("click", function () {
+// historyAPI en JavaScript, que le permite administrar el historial de sesiones de un navegador.
+
+
+
+
     alert("has hecho click en la card");
   });
   return clickCharacter;
