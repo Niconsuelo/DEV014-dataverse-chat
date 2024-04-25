@@ -1,6 +1,5 @@
 export const card = (character) => {
-  const li = `
-        <div class ="card-li" itemscope itemtype="Personaje" id=${character.id}>
+  const li = `   
           <div class="card">
             <div class="imgs-container"> 
               <img src=${character.imageUrl} alt=${character.name} class="card-img">
@@ -15,19 +14,16 @@ export const card = (character) => {
               </div>  
             </div>
           </div>
-        </div>
       `;
 
-      const clickCharacter = document.createElement("li");
-      // el li de la card esta siendo reemplazado por la variable
-      clickCharacter.id = character.id;
-      clickCharacter.className = 'card-li';
+  const clickCharacter = document.createElement("li");
+  // el li de la card esta siendo reemplazado por la variable
+  clickCharacter.id = character.id;
+  clickCharacter.className = "card-li";
+  clickCharacter.innerHTML = li;
 
-      clickCharacter.innerHTML = li;
-
-      clickCharacter.addEventListener("click", function () {
-        alert('has hecho click en la card')
-
-      })
+  clickCharacter.addEventListener("click", function () {
+    alert("has hecho click en la card");
+  });
   return clickCharacter;
 };
