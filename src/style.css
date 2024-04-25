@@ -344,6 +344,40 @@ footer {
   color: #0e0e0e;
  }
 
+ .view-api-key {
+  background-image: url("https://i.ibb.co/p25RZTp/fondo-mapa-tesoro-antiguo-blanco-935589-3122-1.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-chat {
+  text-align: left;
+  padding-top: 45px;
+}
+.img-character {
+  width: 110px;
+  height: 110px;
+  border-radius: 150px;
+  background-image: url("https://i.ibb.co/W2JKSz3/image.png");
+  object-fit: contain;
+  display: flex;
+  align-items: baseline;
+  margin: 1%;
+  background-size: cover; /* Ajusta esto a 'contain' si deseas ver toda la imagen sin cortes */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat;
+}
+.container-chat {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #ececec;
+}
+
+
 @media (max-width: 600px) {
   /* 600px es un punto de ruptura común para mobile */
   .header-img {
@@ -387,5 +421,5 @@ footer {
     height: 640px;
     margin: 0 auto;
   }
-
+  
 };

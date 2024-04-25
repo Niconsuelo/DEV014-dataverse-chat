@@ -7,6 +7,7 @@ import { onURLChange, setRootEl, setRoutes } from "./router.js";
 import Home from "./views/Home.js";
 import Error from "./views/Error.js";
 import ApiKeyView from "./views/ApiKeyView.js";
+import chatCharacter from "./views/ViewChatCharacter.js";
 
 
 //Ejemplo de definición de rutas:
@@ -15,6 +16,8 @@ const routes = {
   "/": Home, // pagina inicial donde tengo las cards
   "/error": Error,
   "/api-key": ApiKeyView, 
+  "/chat-character": chatCharacter,
+
 };
 /*
 TODO:
