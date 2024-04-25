@@ -23,11 +23,11 @@ export const card = (character) => {
       clickCharacter.id = character.id;
       clickCharacter.className = 'card-li';
 
-      li.innerHTML = clickCharacter;
+      clickCharacter.innerHTML = li;
 
       clickCharacter.addEventListener("click", function () {
         alert('has hecho click en la card')
 
       })
-  return li;
+  return clickCharacter;
 };
