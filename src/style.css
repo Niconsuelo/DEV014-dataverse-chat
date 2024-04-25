@@ -343,10 +343,14 @@ footer {
   font-weight: bold;
   color: #0e0e0e;
  }
- .input-chat-individual {
-  width: 480%;
-  height: 60px;
-  border-radius: 14px;
+
+ .view-api-key {
+  background-image: url("https://i.ibb.co/p25RZTp/fondo-mapa-tesoro-antiguo-blanco-935589-3122-1.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-chat {
@@ -417,7 +421,5 @@ footer {
     height: 640px;
     margin: 0 auto;
   }
-  .input-chat-individual {
-    width: 160%;
-  }
+  
 };
