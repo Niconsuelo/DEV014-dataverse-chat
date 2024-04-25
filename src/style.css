@@ -27,7 +27,7 @@ header {
 
 .header-img {
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   object-fit: contain;
   margin-bottom: 0%;
 }
@@ -280,7 +280,7 @@ footer {
 }
 
 .view-api-key {
-  background-image: url(https://preview.redd.it/hunter-exam-arc-2011-panoramic-shots-v0-qep6lrqs21kb1.png?width=640&crop=smart&auto=webp&s=677ad74…);
+  background-image: url(https://github.com/MilenPG/DEV014-dataverse-chat/blob/almacenamiento-api/src/assets/testinggate2.png?raw=true);
     background-size: cover;
     background-clip: border-box;
     background-repeat: no-repeat;
@@ -347,7 +347,7 @@ footer {
 @media (max-width: 600px) {
   /* 600px es un punto de ruptura común para mobile */
   .header-img {
-    height: 138px;
+    height: 12vh;
     margin: 0 auto;
   }
 

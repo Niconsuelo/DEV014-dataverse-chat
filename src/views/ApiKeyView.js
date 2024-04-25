@@ -8,7 +8,7 @@ const ApiKey = () => {
     <h1 class='h-apikey'>API Key</h1>
     <input class= 'input-api-key' id='input-api-key' placeholder='Ingresa aquí tu API Key'/>
     <button class='button-api-key' id='api-key-button'>INGRESAR</button>
-    <p class='api-text'>Para acceder al chat grupal o individual, necesitas registrar una API Key que permita activar la funcionalidad requerida.</p>
+    <p class='api-text'>Para acceder al chat grupal o individual, necesitas registrar una API Key, la cual permite conectar con la API que activa la funcionalidad requerida.</p>
     <p class='api-text'>¿Quieres generar la tuya? ¿No sabes qué es?</p>
     <a class='apikey-link' href='https://platform.openai.com/docs/overview'>HAZ CLICK AQUÍ.</a>
   </div> 
