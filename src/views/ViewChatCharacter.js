@@ -1,7 +1,7 @@
 const chatCharacter = () => {
     
-const viewEl = document.createElement("div");
-const viewChatCharacter = `
+  const viewEl = document.createElement("div");
+  const viewChatCharacter = `
 <div class="container-chat">
 <div class="img-character"></div>
 <div class="text-chat">
@@ -17,9 +17,9 @@ const viewChatCharacter = `
 </div>
 </div>
   `;
-viewEl.innerHTML = viewChatCharacter;
+  viewEl.innerHTML = viewChatCharacter;
 
-return viewEl;
+  return viewEl;
 
 };
 
