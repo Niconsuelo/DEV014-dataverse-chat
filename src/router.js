@@ -65,6 +65,7 @@ export const navigateTo = (pathname, props = {}) => {
 
   // La nueva URL que quieres mostrar en la barra de direcciones
   const url = pathname;
+  console.log(pathname)
 
   history.pushState(state, title, url);
   renderView(pathname, props);

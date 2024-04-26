@@ -33,16 +33,18 @@ export const card = (character) => {
  const newUrl = window.location.pathname + '?id=' + characterId;
 
  // Agregar una nueva entrada al historial utilizando history.pushState()
+ //camia url en la barra de direcciones sin tener que recargar
  // El estado y el título se pueden dejar en blanco por ahora
  history.pushState({}, '', newUrl);
-
+//dos primeros son argumentos
   // Construir la ruta para la vista del chat del personaje utilizando el ID del personaje
-  console.log(navigateTo())
   const chatPath = `/chat-character?id=${characterId}`;
 
 
   // Llamar a navigateTo con la ruta construida y cualquier otra información necesaria
-  navigateTo(chatPath);
+  navigateTo(chatPath, {
+    id: characterId
+  });
 
 
  });

@@ -9,10 +9,13 @@ const viewChatCharacter = `
   <p>En línea</p>
 </div>
 </div>
-<div class="view-api-key">
+<div class="view-chat-character">
 <div class="body-api-key">
   <div>
     <input class="input-chat-individual" />
+  </div>
+  <di>
+  <button class="button-send-message"></button>
   </div>
 </div>
 </div>

@@ -374,6 +374,35 @@ footer {
   background-color: #ececec;
 }
 
+.view-chat-character{
+  background-image: url("https://i.ibb.co/XbznV7Z/1200x675mf.jpg");
+}
+
+.button-send-message{
+  display: inline-block;
+  padding: 2px 13px;
+  background-color: #010101;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  height: 36px;
+  width: 37px;
+}
+.button-send-message::after {
+  content: "";
+  position: absolute;
+  top: 48%;
+  right: -39px; /* Ajusta la posición horizontal de la flecha */
+  transform: rotate(180deg) translateY(46%);
+  width: 41px;
+  height: 3px;
+  border: 10px solid transparent;
+  border-right-color: #faf9f9;
+}
+
+
+
 @media (max-width: 600px) {
   /* 600px es un punto de ruptura común para mobile */
   .header-img {
