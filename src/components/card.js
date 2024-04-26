@@ -25,7 +25,16 @@ export const card = (character) => {
   const clickImg = li.querySelector("#click-img");
   clickImg.addEventListener("click", () => {
     alert(`you've just make a click in ${character.name}`);
-    // navigateTo("/api-key", {})
+    /* navigateTo("/api-key", {});
+- ¿Qué quiero? Que el click me lleve a otra vista
+- Para que el click sepa a dónde tiene que ir:
+- Crear variable para el identificador. Necesita tener un identificador (en este caso, el id de cada personaje)
+- Crear una nueva URL (con window location) que incluya la ruta de la vista y el identificador respectivo (query param + identificador {key+value} === ?id=character.id). "Llevar" el identificador a la url
+- Actualizar el historial de navegación en la URL (con history.pushState({}, '', newUrl)) para sumar la nueva URL sin borrar el historial
+- onURLchange
+
+- MIRAR RAMA NICO PARA REFERENCIAR PASOS A SEGUIR
+*/
   });    
 
   return li;
