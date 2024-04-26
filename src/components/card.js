@@ -1,3 +1,4 @@
+import { navigateTo } from "../router.js";
 export const card = (character) => { 
   const li = `   
            <div class="card">
@@ -25,11 +26,28 @@ export const card = (character) => {
    clickCharacter.addEventListener("click", function () {
  // historyAPI en JavaScript, que le permite administrar el historial de sesiones de un navegador.
  
- 
- 
- 
-     alert("has hecho click en la card");
+ // Obtener el ID del personaje del atributo 'id' del elemento <li> haciendo referencia a 'this'
+ const characterId = this.id;
+
+ // Crear una nueva URL con un parámetro 'id' que corresponde al ID del personaje
+ const newUrl = window.location.pathname + '?id=' + characterId;
+
+ // Agregar una nueva entrada al historial utilizando history.pushState()
+ // El estado y el título se pueden dejar en blanco por ahora
+ history.pushState({}, '', newUrl);
+
+  // Construir la ruta para la vista del chat del personaje utilizando el ID del personaje
+  console.log(navigateTo())
+  const chatPath = `/chat-character?id=${characterId}`;
+
+
+  // Llamar a navigateTo con la ruta construida y cualquier otra información necesaria
+  navigateTo(chatPath);
+
+
  });
+
+
  return clickCharacter;
  
 };
