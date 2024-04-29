@@ -1,6 +1,7 @@
 // parecido a una API, permite traer y llevar informacion de las vistas.
 // si apreto un click en un boton, me llevara a otro lado, aqui se ejecuta esa funcion.
 
+
 //variable que va a permitir ir a buscar la ruta que se solicita
 let ROUTES = {};
 
@@ -64,6 +65,10 @@ export const navigateTo = (pathname, props = {}) => {
   const title = pathname;
 
   // La nueva URL que quieres mostrar en la barra de direcciones
+
+
+  //consultar a los queryparams 
+  
   const url = pathname;
   console.log(pathname)
 

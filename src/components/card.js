@@ -29,16 +29,9 @@ export const card = (character) => {
  // Obtener el ID del personaje del atributo 'id' del elemento <li> haciendo referencia a 'this'
  const characterId = this.id;
 
- // Crear una nueva URL con un parámetro 'id' que corresponde al ID del personaje
- const newUrl = window.location.pathname + '?id=' + characterId;
 
- // Agregar una nueva entrada al historial utilizando history.pushState()
- //camia url en la barra de direcciones sin tener que recargar
- // El estado y el título se pueden dejar en blanco por ahora
- history.pushState({}, '', newUrl);
-//dos primeros son argumentos
   // Construir la ruta para la vista del chat del personaje utilizando el ID del personaje
-  const chatPath = `/chat-character?id=${characterId}`;
+  const chatPath = `/chat-character`+ '?id=' + characterId; //completar con el queryparams, (id), valor.
 
 
   // Llamar a navigateTo con la ruta construida y cualquier otra información necesaria
