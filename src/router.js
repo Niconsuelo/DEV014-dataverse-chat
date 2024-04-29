@@ -66,8 +66,10 @@ export const navigateTo = (pathname, props = {}) => {
   // La nueva URL que quieres mostrar en la barra de direcciones
   const url = pathname;
 
-  history.pushState(state, title, url);
-  renderView(pathname, props);
+  history.pushState(state, title, url); // SE RENDERIZA LA URL, PERO NO SE ESTÁ RENDERIZANDO LA VISTA PORQUE 
+  // Antes de que se ejecute la función y entregue la nueva vista, debemos DESFRAGMENTAR (separar los props de query params) el pathname, para que cuando se ejecute renderView en router y vaya a preguntarle a index.js si tal ruta/vista existe, la reconozca. Y LUEGO, se ejecuten los queryparams/props
+  const splitPathname = pathname.split('?');
+  renderView(splitPathname[0], props);
 };
 //transforma url en una vista con sus props correspondiente que son los queryparams
 export const onURLChange = (location) => {
