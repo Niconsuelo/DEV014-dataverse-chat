@@ -14,7 +14,10 @@ export const chatCharacter = (props) => {
     <div class='chat-box'> 
       <div class='chat-id'>
         <img src='${characterObject.imageUrl}' alt='${characterObject.name}' class='chat-img'>
-        <p class='${characterObject.name}'>Character Name</p>
+        <div class='chat-id-text'>
+          <p class='chat-name'>${characterObject.name}</p>
+          <p>En línea</p>
+        </div>
       </div>
       <div class='chat-msgs'>
       </div>
