@@ -66,14 +66,21 @@ export const navigateTo = (pathname, props = {}) => {
 
   // La nueva URL que quieres mostrar en la barra de direcciones
 
-
   //consultar a los queryparams 
   
   const url = pathname;
-  console.log(pathname)
-
+  
+//cambia url, reemplaza url por pathname
   history.pushState(state, title, url);
-  renderView(pathname, props);
+
+//separar el queryparams del pathname
+const splitPathname = pathname.split('?');
+console.log(splitPathname)
+
+//solo debe renderizar 
+  renderView(splitPathname[0], props);
+
+
 };
 //transforma url en una vista con sus props correspondiente que son los queryparams
 export const onURLChange = (location) => {

@@ -18,6 +18,7 @@ console.log(objectNew)
     
 const viewEl = document.createElement("div");
 const viewChatCharacter = `
+
 <div class="view-chat-character">
     <div class="container-chat">
       <img class="img-character" src='${objectNew.imageUrl}' alt='${objectNew.name}' /> 
@@ -36,6 +37,7 @@ const viewChatCharacter = `
     </div>    
   </div>
 </div>
+
 
 
 

@@ -31,9 +31,10 @@ export const card = (character) => {
 
 
   // Construir la ruta para la vista del chat del personaje utilizando el ID del personaje
+
   const chatPath = `/chat-character`+ '?id=' + characterId; //completar con el queryparams, (id), valor.
 
-
+console.log(chatPath)
   // Llamar a navigateTo con la ruta construida y cualquier otra información necesaria
   navigateTo(chatPath, {
     id: characterId
