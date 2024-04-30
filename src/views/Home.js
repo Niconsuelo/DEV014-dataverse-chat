@@ -1,7 +1,7 @@
 /* Crea una función encargada de generar el contenido de la vista. 
 Esta función debe devolver un elemento DOM para que pueda ser utilizado por el enrutador.*/
 
-import { cards } from "../components/Cards.js";
+import { cards } from "../components/cards.js";
 import { filterBar } from "../components/filterBar.js";
 import { stats } from "../components/stats.js";
 import dataset from "../data/dataset.js";

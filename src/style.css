@@ -20,7 +20,7 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Bn-3VF2OtmhcC8KC93J9lg/1200x675mf.jpg");
+  background-image: url("https://i.ibb.co/p25RZTp/fondo-mapa-tesoro-antiguo-blanco-935589-3122-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -103,7 +103,7 @@ button {
 }
 
 .button-img {
-  width: fit-content;
+  width: auto;
   height: 100%;
 }
 
@@ -271,12 +271,17 @@ dt {
 }
 
 footer {
-  margin-bottom: 0%;
+  margin: 0%;
   text-align: center;
   background-color: #000000;
   color: #ffffff;
   height: 60px;
   line-height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
 }
 
 .view-api-key {
@@ -345,31 +350,106 @@ footer {
  }
 
  .view-api-key {
-  background-image: url("https://i.ibb.co/p25RZTp/fondo-mapa-tesoro-antiguo-blanco-935589-3122-1.jpg");
-  background-size: 100% 100%;
+  background-image: url("https://github.com/Niconsuelo/DEV014-dataverse-chat/blob/main/src/assets/testinggate2.png?raw=true");
+  object-fit: cover;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.text-chat {
-  text-align: left;
-  padding-top: 45px;
-}
-.img-character {
-  width: 110px;
-  height: 110px;
-  border-radius: 150px;
-  background-image: url("https://i.ibb.co/W2JKSz3/image.png");
-  object-fit: contain;
-  display: flex;
-  align-items: baseline;
-  margin: 1%;
-  background-size: cover; /* Ajusta esto a 'contain' si deseas ver toda la imagen sin cortes */
-  background-position: center; /* Centra la imagen en el contenedor */
+.view-character-chat {
+  height: 70vh;
+  margin: 0;
+  background-image: url("https://i.ibb.co/p25RZTp/fondo-mapa-tesoro-antiguo-blanco-935589-3122-1.jpg");
+  background-size: cover;
+  /* background-clip: border-box; */
   background-repeat: no-repeat;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.chat-box {
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  color: #0e0e0e;
+  /* background: rgba(255, 255, 255, 0.2); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-id {
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2%;
+}
+
+.chat-img {
+  width: 70px;
+  height: 70px;
+  border: solid black 0.5px;
+  border-radius: 150px;
+  object-fit: cover;
+  margin: 2%;
+}
+
+.chat-id-text {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1%;
+}
+
+.chat-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.chat-write {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin: 2%;
+width: 80%;
+height: 80px;
+margin: 2%;
+padding: 1rem;
+border-radius: 15px;
+background-color: whitesmoke;
+}
+
+.chat-input {
+width: 80%;
+height: 80px;
+margin: 2%;
+padding: 1px;
+font-family: inherit;
+font-size: inherit;
+border-radius: 15px;
+border: none;
+background-color: whitesmoke;
+}
+
+.send-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 150px;
+}
+
 .container-chat {
   display: flex;
   justify-content: center;
