@@ -8,6 +8,7 @@ import Home from "./views/Home.js";
 import Error from "./views/Error.js";
 import ApiKeyView from "./views/ApiKeyView.js";
 import chatCharacter from "./views/ViewChatCharacter.js";
+import { navigateTo } from "./router.js";
 
 
 //Ejemplo de definición de rutas:
@@ -38,4 +39,11 @@ window.addEventListener("DOMContentLoaded", () => {
   const queryParamsRoute = window.location.search;
 
   onURLChange(pathnameRoute + queryParamsRoute);
+
+const buttonApiKey = document.querySelector('#api-key-button');
+buttonApiKey.addEventListener('click', function () {
+ 
+navigateTo("/api-key");
+
+});
 });
