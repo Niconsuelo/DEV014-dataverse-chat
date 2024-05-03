@@ -23,8 +23,6 @@ export const chatCharacter = (props) => {
 
       <div class="form-chats" id="form-chats">
       </div>
-
-
       <div class='chat-write'>
         <input class= 'chat-input' id='chat-input' type='text' placeholder='Escribe tu mensaje...'/>
         <button class='send-button' id='send-button'> > </button>
@@ -52,7 +50,7 @@ export const chatCharacter = (props) => {
           <span class="time">${timeClock()} </span>
     </div>
     `;
-    console.log(formChat);
+    //console.log(formChat);
     formChat.innerHTML = formChat.innerHTML + chat;
 
     //al hacer click o enter, se limpia el contenedor del input
