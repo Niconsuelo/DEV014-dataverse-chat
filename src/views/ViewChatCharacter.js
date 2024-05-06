@@ -16,7 +16,7 @@ export const chatCharacter = (props) => {
       <div class='chat-id'>
         <img src='${characterObject.imageUrl}' alt='${characterObject.name}' class='chat-img'>
         <div class='chat-id-text'>
-          <p class='chat-name'>${characterObject.name}</p>
+        <p class='chat-name'>${characterObject.name}</p>
           <p>En línea</p>
         </div>
       </div>
@@ -41,6 +41,7 @@ export const chatCharacter = (props) => {
 
     const chat = `
     <div class="container-msg">
+    <p class='chat-name-user'>HunterXFanático</p>
           <div class="text-cloud text-cloud-r">
             <p id="text-chat" class="text-msg">
             ${inputText}

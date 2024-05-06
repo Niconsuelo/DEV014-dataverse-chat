@@ -423,7 +423,16 @@ footer {
   gap: 1%;
 }
 
+.chat-name-user{
+  font-size: small;
+  font-weight: 700;
+  margin: -18px 8px 8px;
+  color:  #ffffff;
+}
+
+
 .chat-name {
+ 
   font-size: 1.1rem;
   font-weight: 700;
 }
@@ -442,7 +451,7 @@ footer {
 }
 
 .text-cloud {
-  background-color: #bc5c04;
+  background-color: #ffffff;
   opacity: 0.75;
   color: #000;
   border-radius: 10px;
@@ -464,14 +473,16 @@ footer {
 
 .text-msg {
   color: #000;
+  font-size: small;
 }
 
 .time {
-  color: #000;
+  color: #2c2b2b;
   display: block;
   font-size: 12px;
   margin: 8px 0 0;
   text-align: end;
+  font-size: xx-small;
 }
 
 .chat-write {
