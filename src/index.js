@@ -3,7 +3,7 @@
 // ACA SE ASIGNA LA RUTA Y SE LE AGREGA EL JS ASOCIADO A LA VISTA
 // ademas se debe configurar
 
-import { onURLChange, setRootEl, setRoutes } from "./router.js";
+import { navigateTo, onURLChange, setRootEl, setRoutes } from "./router.js";
 import Home from "./views/Home.js";
 import Error from "./views/Error.js";
 import ApiKeyView from "./views/ApiKeyView.js";
@@ -17,6 +17,7 @@ const routes = {
   "/error": Error,
   "/api-key": ApiKeyView, 
   "/chat-character": chatCharacter,
+  // "/groupal-chat": 
 
 };
 /*
@@ -38,4 +39,21 @@ window.addEventListener("DOMContentLoaded", () => {
   const queryParamsRoute = window.location.search;
 
   onURLChange(pathnameRoute + queryParamsRoute);
+
+  const navToHome = document.querySelector("#to-home");
+  navToHome.addEventListener("click", function () {
+    navigateTo("/");
+  });
+  
+  const navToApiKey = document.querySelector("#to-api-key");
+  navToApiKey.addEventListener("click", function () {
+    navigateTo("/api-key");
+  });
+
+  const buttonGroupalChat = document.querySelector("#g-chat-button");
+  buttonGroupalChat.addEventListener("click", function () {
+    navigateTo("/groupal-chat");
+  });
+
+
 });
