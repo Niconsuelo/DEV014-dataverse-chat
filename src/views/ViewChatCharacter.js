@@ -1,5 +1,6 @@
 import dataset from '../data/dataset.js';
 import { timeClock } from '../lib/extraFunctions.js';
+import { communicateWithOpenAI } from '../lib/openAIAPI.js';
 // Para poder renderizar las propiedades específicas del personaje q le hagamos click, aquí debemos acceder a la data
 export const chatCharacter = (props) => {
   let characterObject = {};
@@ -48,6 +49,13 @@ export const chatCharacter = (props) => {
     `;
     //console.log(formChat);
     formChat.innerHTML = formChat.innerHTML + chat;
+
+    const OpenAIObject = {
+      message: inputText,
+      nameCharacter: characterObject.name,
+    };
+    communicateWithOpenAI(OpenAIObject);
+
     //al hacer click o enter, se limpia el contenedor del input
     document.querySelector('#chat-input').value = '';
   });
