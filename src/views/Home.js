@@ -5,12 +5,8 @@ import { cards } from "../components/cards.js";
 import { filterBar } from "../components/filterBar.js";
 import { stats } from "../components/stats.js";
 import dataset from "../data/dataset.js";
-import { getApiKey } from "../lib/apiKey.js";
 import { filterData, sortData } from "../lib/dataFunctions.js";
-
-const Home = (props) => {
-  console.log("AQUI ES HOME ", props);
-  // HOME ES LA VISTA INICIAL-DEBE CONTENER TODO LO QUE SE VA A RENDERIZAR EN EL INICIO HTML, RENDERCARD DEBEN IR AQUI
+const Home = () => {
   const viewEl = document.createElement("div");
 
   const controlBar = document.createElement("div");
@@ -95,8 +91,6 @@ const Home = (props) => {
   const renderStats = stats(dataset);
   newSection.innerHTML = renderStats;
   viewEl.appendChild(newSection);
-  
-  console.log(getApiKey()); // PRUEBA DE QUE EFECTIVAMENTE FUNCIONA EL MÉTODO getItem().
 
   return viewEl;
 };
