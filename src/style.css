@@ -426,32 +426,48 @@ footer {
   overflow-y: scroll;
 }
 
-.container-msg {
-  padding: 1.5rem;
+.name-msg {
+  color: whitesmoke;
+  margin: 1px;
+  font-size: smaller;
+  padding: 6px;
+}
+
+.container-msg-r {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: end;
 }
 
-.text-cloud {
-  background-color: #BC5C04;
-  opacity: 0.85;
+.container-msg-l {
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.text-cloud-r {
+  background-color: whitesmoke;
   color: #0e0e0e;
   border-radius: 10px;
   font-size: 14px;
-  padding: 5px 10px 5px 12px;
   max-width: 500px;
   padding: 1rem;
   box-shadow: rgb(0 0 0 / 25%) 0px 2px 5px 2px;
   text-align: left;
 }
 
-.text-cloud-r {
-  float: right;
-}
-
 .text-cloud-l {
-  float: left;
+  background-color: #BC5C04;
+  opacity: 0.85;
+  color: #0e0e0e;
+  border-radius: 10px;
+  font-size: 14px;
+  max-width: 500px;
+  padding: 1rem;
+  box-shadow: rgb(0 0 0 / 25%) 0px 2px 5px 2px;
+  text-align: left;
 }
 
 .text-msg {
@@ -459,11 +475,12 @@ footer {
 }
 
 .time {
-  color: #000;
+  color: #0e0e0e;
   display: block;
   font-size: 12px;
-  margin: 8px 0 0;
+  margin: 0;
   text-align: end;
+  padding: 8px;
 }
 
 .chat-write {
