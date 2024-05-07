@@ -37,8 +37,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const pathnameRoute = window.location.pathname;
   const queryParamsRoute = window.location.search;
-
-  onURLChange(pathnameRoute + queryParamsRoute);
+  const currentURL = () => {
+    onURLChange(pathnameRoute + queryParamsRoute);
+  }
+  currentURL(); 
+  window.addEventListener("popstate", currentURL); // ESTUDIAR* 
 
   const navToHome = document.querySelector("#to-home");
   navToHome.addEventListener("click", function () {
@@ -54,6 +57,5 @@ window.addEventListener("DOMContentLoaded", () => {
   buttonGroupalChat.addEventListener("click", function () {
     navigateTo("/groupal-chat");
   });
-
 
 });

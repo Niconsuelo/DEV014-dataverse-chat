@@ -37,18 +37,33 @@ export const chatCharacter = (props) => {
   const formChat = viewEl.querySelector('#form-chats');
   clickSendMessage.addEventListener('click', function () {
     const inputText = document.getElementById('chat-input').value;
-    const chat = `
-    <div class='container-msg'>
-          <div class='text-cloud text-cloud-r'>
-            <p id='text-chat' class='text-msg'>
-            ${inputText}
-            </p>
-          </div>
-          <span class='time'>${timeClock()} </span>
+    const userChat = `
+    <div class='container-msg-r'>
+      <p class='name-msg'>Tú</p>
+      <div class='text-cloud-r'>
+        <p id='text-chat' class='text-msg'>
+        ${inputText}
+        </p>
+      </div>
+      <span class='time'>${timeClock()} </span>
     </div>
     `;
+    formChat.innerHTML = formChat.innerHTML + userChat;
+
+    const systemChat = `
+    <div class='container-msg-l'>
+      <p class='name-msg'>${characterObject.name}</p>
+      <div class='text-cloud-l'>
+        <p id='text-chat' class='text-msg'>
+          ${inputText}
+        </p>
+      </div>
+      <span class='time'>${timeClock()}</span>
+    </div>
+    `;
+    formChat.innerHTML = formChat.innerHTML + systemChat;
+
     //console.log(formChat);
-    formChat.innerHTML = formChat.innerHTML + chat;
 
     const OpenAIObject = {
       message: inputText,
