@@ -1,16 +1,16 @@
-import dataset from '../data/dataset.js';
-import { timeClock } from '../lib/extraFunctions.js';
-import { communicateWithOpenAI } from '../lib/openAIAPI.js';
+import dataset from "../data/dataset.js";
+import { timeClock } from "../lib/extraFunctions.js";
+import { communicateWithOpenAI } from "../lib/openAIAPI.js";
 // Para poder renderizar las propiedades específicas del personaje q le hagamos click, aquí debemos acceder a la data
 export const chatCharacter = (props) => {
   let characterObject = {};
-  dataset.forEach(character => {
+  dataset.forEach((character) => {
     if (character.id === props.id) {
-      characterObject = character
-    } 
+      characterObject = character;
+    }
   });
-  
-  const viewEl = document.createElement('div');
+
+  const viewEl = document.createElement("div");
   const viewChatCharacter = `
   <div class='view-character-chat'>
     <div class='chat-box'> 
@@ -33,38 +33,73 @@ export const chatCharacter = (props) => {
   `;
   viewEl.innerHTML = viewChatCharacter;
 
-  const clickSendMessage = viewEl.querySelector('#send-button');
-  const formChat = viewEl.querySelector('#form-chats');
-  clickSendMessage.addEventListener('click', function () {
-    const inputText = document.getElementById('chat-input').value;
+  const clickSendMessage = viewEl.querySelector("#send-button");
+  const formChat = viewEl.querySelector("#form-chats");
+  clickSendMessage.addEventListener("click", function () {
+    const inputText = document.getElementById("chat-input").value;
     const chat = `
     <div class='container-msg'>
-          <div class='text-cloud text-cloud-r'>
+    <p class='user-chat'>Yo</p>
+          <div class='text-cloud-r'>
             <p id='text-chat' class='text-msg'>
             ${inputText}
             </p>
           </div>
-          <span class='time'>${timeClock()} </span>
+          <span class='time-r'>${timeClock()} </span>
     </div>
     `;
     //console.log(formChat);
     formChat.innerHTML = formChat.innerHTML + chat;
 
+
+
+    const chat2 = `
+    <div class='container-msg-l'>
+    <p class='user-chat'> ${characterObject.name}</p>
+          <div class='text-cloud-l'>
+            <p id='text-chat' class='text-msg'>
+            ${inputText}
+            </p>
+          </div>
+          <span class='time-l'>${timeClock()} </span>
+    </div>
+    `;
+    //console.log(formChat);
+    formChat.innerHTML = formChat.innerHTML + chat2;
+
     const OpenAIObject = {
       message: inputText,
       nameCharacter: characterObject.name,
     };
-    communicateWithOpenAI(OpenAIObject);
+    
+    /*
+    communicateWithOpenAI(OpenAIObject).then((AIanswer) => {
+      // Maneja los datos obtenidos de la respuesta
+      console.log("Datos del usuario recibidos:", AIanswer);
+
+crear un elemento div formChat.innethtml =
+${response.choices[0].message.content}
+
+   
+    }).catch((error) => {
+      // Maneja cualquier error que ocurra durante la solicitud o procesamiento de la respuesta
+      console.error("Error al ejecutar funcion communicateWithOpenAI:", error);
+    });
+    */
+   
 
     //al hacer click o enter, se limpia el contenedor del input
-    document.querySelector('#chat-input').value = '';
+    document.querySelector("#chat-input").value = ""
+
   });
   //para activar el enter cuando utilizamos el input de chat individual
-  viewEl.querySelector('#chat-input').addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') {
-      document.getElementById('send-button').click(); // Simula un clic en el botón
-    }
-  });
+  viewEl
+    .querySelector("#chat-input")
+    .addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        document.getElementById("send-button").click(); // Simula un clic en el botón
+      }
+    });
 
   return viewEl;
 };

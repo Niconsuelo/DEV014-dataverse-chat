@@ -427,43 +427,69 @@ footer {
 }
 
 .container-msg {
-  padding: 1.5rem;
+  padding: 0.3rem;
   display: flex;
   flex-direction: column;
   align-items: end;
 }
 
-.text-cloud {
-  background-color: #BC5C04;
-  opacity: 0.85;
+.container-msg-l{
+  padding: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+
+.text-cloud-r {
   color: #0e0e0e;
   border-radius: 10px;
-  font-size: 14px;
-  padding: 5px 10px 5px 12px;
+  font-size: 10px;
   max-width: 500px;
   padding: 1rem;
   box-shadow: rgb(0 0 0 / 25%) 0px 2px 5px 2px;
   text-align: left;
-}
-
-.text-cloud-r {
   float: right;
+  background-color: #ffffff;
 }
 
 .text-cloud-l {
   float: left;
+  background-color: #BC5C04;
+  box-shadow: rgb(0 0 0 / 25%) 0px 2px 5px 2px;
+  max-width: 500px;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .text-msg {
   color: #000;
 }
+.user-chat{
+  color: #ffffff;
+  padding: 6px;
+  text-align: left;
+  font-size: smaller;
+  margin: 1px;
+}
 
-.time {
+.time-r {
   color: #000;
   display: block;
-  font-size: 12px;
-  margin: 8px 0 0;
+  font-size: x-small;
+  margin: 8px 6px 0;
   text-align: end;
+}
+
+.time-l{
+  color: #000;
+  font-size: 12px;
+  margin: 8px 6px 0;
+  text-align: left;
 }
 
 .chat-write {

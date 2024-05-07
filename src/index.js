@@ -35,11 +35,16 @@ window.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
   setRootEl(root);
 
+  function currentURL(){
   const pathnameRoute = window.location.pathname;
   const queryParamsRoute = window.location.search;
 
   onURLChange(pathnameRoute + queryParamsRoute);
+  }
+  currentURL();
 
+  window.addEventListener("popstate", currentURL);
+  
   const navToHome = document.querySelector("#to-home");
   navToHome.addEventListener("click", function () {
     navigateTo("/");
