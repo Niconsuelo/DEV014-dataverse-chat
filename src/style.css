@@ -30,6 +30,7 @@ header {
   height: 15vh;
   object-fit: contain;
   margin-bottom: 0%;
+  cursor: pointer;
 }
 
 nav {
@@ -49,6 +50,10 @@ nav {
 .g-chat-button {
   background-image: linear-gradient(rgba(251, 248, 248, 1), rgba(197, 191, 191, 2), rgba(253, 253, 253, 1));
   color: #0e0e0e;
+  cursor: pointer;
+}
+.button-nav-apikey{
+  cursor: pointer;
 }
 
 .filter-bar {
@@ -156,6 +161,7 @@ ul {
   width: 210px;
   object-fit: cover;
   border-radius: 1px;
+  cursor: url(https://i.ibb.co/pxp7P5z/image.png), pointer;
 }
 
 .barcode-img {
