@@ -6,9 +6,9 @@ export const communicateWithOpenAI = (messages) => {
   console.log(messages);
   console.log(getApiKey());
   //almacenamiento de apikey
-  const apiKey = getApiKey(); // getApiKey(); // debe ser enviada como header de autorizacion
+  const apiKey = ""; // getApiKey(); // debe ser enviada como header de autorizacion
 
-  const url = "https://api.openai.com/v1/chat/completions";
+  const url = "";
 
   //utiliza post (acepta un objeto de datos)
   //post: enviar datos a traves de una peticion
@@ -18,7 +18,7 @@ export const communicateWithOpenAI = (messages) => {
     messages: [
       {
         role: "system",
-        content: `You are ${messages.nameCharacter} of the anime hunter x, Just answer questions that are related to your character and his story.`
+        content: `You are ${messages.nameCharacter} of the anime hunter x, Just answer questions that are related to your character and his story.`,
       },
       { role: "user", content: messages.message },
     ],

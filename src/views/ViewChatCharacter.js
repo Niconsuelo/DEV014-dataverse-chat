@@ -1,6 +1,7 @@
 import dataset from "../data/dataset.js";
 import { communicateWithOpenAI } from "../lib/chatOpenAl.js";
 import { timeClock } from "../lib/extraFunctions.js";
+
 // Para poder renderizar las propiedades específicas del personaje q le hagamos click, aquí debemos acceder a la data
 export const chatCharacter = (props) => {
   let characterObject = {};
@@ -21,8 +22,10 @@ export const chatCharacter = (props) => {
           <p>En línea</p>
         </div>
       </div>
-      <div class='form-chats' id='form-chats'>
+      <div class='form-chats-openai' id='form-chats-openai'>
       </div>
+      <div class='form-chats' id='form-chats'>
+     </div>
       <div class='chat-write'>
         <input class= 'chat-input' id='chat-input' type='text' placeholder='Escribe tu mensaje aquí...'/>
         <button class='send-button' id='send-button'> > </button>
@@ -35,6 +38,7 @@ export const chatCharacter = (props) => {
 
   const clickSendMessage = viewEl.querySelector("#send-button");
   const formChat = viewEl.querySelector("#form-chats");
+
   clickSendMessage.addEventListener("click", function () {
     const inputText = document.getElementById("chat-input").value;
     const chat = `
@@ -49,17 +53,36 @@ export const chatCharacter = (props) => {
     `;
 
     formChat.innerHTML = formChat.innerHTML + chat;
+    //al hacer click o enter, se limpia el contenedor del input
+    document.querySelector("#chat-input").value = "";
 
     //formchat estan las nubles, más los nuevas nubes.
     //concatenar formChat con nuevo chat.
+
     const OpenAIObjects = {
       message: inputText,
       nameCharacter: characterObject.name,
     };
-    communicateWithOpenAI(OpenAIObjects);
-    //al hacer click o enter, se limpia el contenedor del input
-    document.querySelector("#chat-input").value = "";
+    communicateWithOpenAI(OpenAIObjects)
+    
+      .then((response) => {
+        const chatOpenAI = `
+  <div class='container-msg'>
+        <div class='text-cloud text-cloud-r'>
+          <p id='text-chat' class='text-msg'>
+          ${inputText}
+          </p>
+        </div>
+        <span class='time'>${timeClock()} </span>
+  </div>
+  `;
+        formChat.innerHTML = formChat.innerHTML + chatOpenAI;
+      })
+      .catch((error) => {
+        console.error("Error al recibir respuesta de OpenAI:", error);
+      });
   });
+
   //para activar el enter cuando utilizamos el input de chat individual
   viewEl
     .querySelector("#chat-input")
