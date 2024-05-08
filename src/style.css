@@ -48,11 +48,15 @@ nav {
 }
 
 .g-chat-button {
-  background-image: linear-gradient(rgba(251, 248, 248, 1), rgba(197, 191, 191, 2), rgba(253, 253, 253, 1));
+  background-image: linear-gradient(
+    rgba(251, 248, 248, 1),
+    rgba(197, 191, 191, 2),
+    rgba(253, 253, 253, 1)
+  );
   color: #0e0e0e;
   cursor: pointer;
 }
-.button-nav-apikey{
+.button-nav-apikey {
   cursor: pointer;
 }
 
@@ -81,7 +85,7 @@ button {
   padding: 0.5%;
   font-family: inherit;
   font-size: inherit;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   color: #0e0e0e;
 }
 
@@ -218,21 +222,21 @@ span {
 }
 
 h4 {
-padding: 2%;
-margin: 0%;
-height: fit-content;
-width: 100%;
-text-transform: uppercase;
-font-weight: bolder;
-font-size: 1.5em;
-letter-spacing: 2px;
-color: whitesmoke;
-text-shadow: 0px 0px 14px #ffffff;
-background-color: #000000;
+  padding: 2%;
+  margin: 0%;
+  height: fit-content;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  color: whitesmoke;
+  text-shadow: 0px 0px 14px #ffffff;
+  background-color: #000000;
 
-/* background-color: #3f1fb1de; */
-/* background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Bn-3VF2OtmhcC8KC93J9lg/1200x675mf.jpg"); */
-/* background-repeat: no-repeat;
+  /* background-color: #3f1fb1de; */
+  /* background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Bn-3VF2OtmhcC8KC93J9lg/1200x675mf.jpg"); */
+  /* background-repeat: no-repeat;
 background-size: cover; */
 }
 
@@ -245,10 +249,10 @@ background-size: cover; */
   flex-direction: column;
   text-align: center;
 }
- 
+
 .stats-box {
   margin: 0%;
-  width:auto;
+  width: auto;
   height: fit-content;
   display: flex;
   justify-content: space-around;
@@ -291,14 +295,14 @@ footer {
 }
 
 .view-api-key {
-  background-image: url(https://github.com/MilenPG/DEV014-dataverse-chat/blob/almacenamiento-api/src/assets/testinggate2.png?raw=true);
-    background-size: cover;
-    background-clip: border-box;
-    background-repeat: no-repeat;
-    /* height: 100vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url("https://i.ibb.co/vxP7nRG/testinggate2.png");
+  background-size: cover;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-api-key {
@@ -338,24 +342,27 @@ footer {
   font-size: inherit;
 }
 
-.button-api-key{
-  background-image: linear-gradient(rgba(251, 248, 248, 1), rgba(197, 191, 191, 2), rgba(253, 253, 253, 1));
+.button-api-key {
+  background-image: linear-gradient(
+    rgba(251, 248, 248, 1),
+    rgba(197, 191, 191, 2),
+    rgba(253, 253, 253, 1)
+  );
   color: #0e0e0e;
   width: 50%;
- }
+}
 
- .api-text {
+.api-text {
   margin: 0% 2%;
+}
 
- }
-
- .apikey-link {
+.apikey-link {
   text-decoration: underline;
   font-weight: bold;
   color: #0e0e0e;
- }
+}
 
- .view-api-key {
+.view-api-key {
   background-image: url("https://github.com/Niconsuelo/DEV014-dataverse-chat/blob/main/src/assets/testinggate2.png?raw=true");
   object-fit: cover;
   height: 100vh;
@@ -425,14 +432,14 @@ footer {
   padding: 1.8px;
 }
 
-.chat-name-status{
+.chat-name-status {
   font-size: smaller;
   color: #adaaaa;
   padding: 1.8px;
 }
 
 .form-chats {
-  width: 90%; 
+  width: 90%;
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -472,7 +479,7 @@ footer {
 }
 
 .text-cloud-l {
-  background-color: #BC5C04;
+  background-color: #bc5c04;
   opacity: 0.85;
   color: #0e0e0e;
   border-radius: 10px;
@@ -498,31 +505,31 @@ footer {
 }
 
 .chat-write {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-margin: 2%;
-width: 80%;
-height: 59px;
-margin: 2%;
-padding: 1rem;
-border-radius: 20px;
-background-color: whitesmoke;
-border-style: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2%;
+  width: 80%;
+  height: 59px;
+  margin: 2%;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  border-style: solid;
 }
 
 .chat-input {
-width: 80%;
-margin: 2%;
-padding: 1px;
-font-family: inherit;
-font-size: inherit;
-border-radius: 15px;
-border: none;
-background-color: whitesmoke;
-outline: none;
-overflow: scroll;
+  width: 80%;
+  margin: 2%;
+  padding: 1px;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 15px;
+  border: none;
+  background-color: whitesmoke;
+  outline: none;
+  overflow: scroll;
 }
 
 .send-button {
@@ -546,7 +553,6 @@ overflow: scroll;
   justify-content: center;
   align-items: center;
   padding: 3%;
-
 }
 .error-img {
   width: 300px;
@@ -557,11 +563,146 @@ overflow: scroll;
   background-color: whitesmoke;
   object-fit: contain;
 }
- .error-h1 {
+.error-h1 {
   margin: 3%;
   font-size: 2rem;
   font-weight: 700;
- }
+}
+
+.character-gruop {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 2px 10px 2px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.chat-nav-groupal {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2%;
+  justify-content: space-between;
+}
+
+.chat-img-groupal {
+  width: 65px;
+  height: 65px;
+  border: solid black 0.5px;
+  border-radius: 150px;
+  object-fit: cover;
+  margin: 2%;
+}
+
+.form-chats-group {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.chat-name-groupal {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 1.8px;
+  text-align: revert-layer;
+}
+
+.container-character-groupal {
+  align-items: center;
+  margin: 23px;
+  cursor: pointer;
+}
+
+.line-name-groupal {
+  font-size: 10px;
+  color: #adaaaa;
+}
+
+.info-background {
+  background-image: url(https://i.ibb.co/p25RZTp/fondo-mapa-tesoro-antiguo-blanco-935589-3122-1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-y: scroll;
+  justify-content: center;
+}
+
+.img-background-info {
+  display: flex;
+  background-image: url(https://i.ibb.co/jypWMsT/1.png);
+  height: 431px;
+  width: 800px;
+  border-radius: 20px;
+  border-color: #000;
+  border-style: solid;
+  margin: 31px 4em 31px 4em;
+  opacity: 0.75;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+.img-character-info {
+  display: flex;
+  background-image: url(https://i.ibb.co/Jv3psNR/58596-Hisoka-Hunter-Hunter-Hisoka-Hunter-Hunter-HD.jpg);
+  background-size: cover;
+  height: 173px;
+  width: 289px;
+  margin-top: 15px;
+  border-radius: 15px;
+  border-color: #000;
+  border-style: solid;
+  margin-bottom: inherit;
+}
+
+.character-info {
+  background-color: whitesmoke;
+  color: #0e0e0e;
+  font-size: 14px;
+  max-width: 500px;
+  padding: 1rem;
+  text-align: left;
+  border-color: #000;
+  border-style: solid;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: -11px;
+}
+
+.container-info-chat {
+  display: flex;
+  flex-direction: column;
+  margin: -6px -10px 18px 0px;
+  align-items: center;
+}
+
+.text-character-info {
+  font-size: 90%;
+}
+
+.element-chat-inv {
+  background-image: linear-gradient(
+    rgba(251, 248, 248, 1),
+    rgba(197, 191, 191, 2),
+    rgba(253, 253, 253, 1)
+  );
+  color: #0e0e0e;
+  width: 20%;
+  cursor: pointer;
+  margin: -10px 249px 12px 265px;
+}
+
+.text-button-info {
+  font-size: 90%;
+}
 
 @media (max-width: 600px) {
   /* 600px es un punto de ruptura común para mobile */
@@ -574,7 +715,8 @@ overflow: scroll;
   
     }*/
   select,
-  button, #stats-button {
+  button,
+  #stats-button {
     width: 100%;
     text-align: center;
     margin: 2%;
@@ -582,7 +724,6 @@ overflow: scroll;
 
   nav {
     justify-content: flex-end;
-
   }
 
   .g-chat-button {
@@ -602,9 +743,41 @@ overflow: scroll;
     border-radius: 90px;
   }
 
-  .view-api-key{
+  .view-api-key {
     height: 640px;
     margin: 0 auto;
   }
-  
-};
+
+  .chat-img-groupal {
+    width: 55px;
+    height: 55px;
+  }
+
+  .img-background-info {
+    height: 440px;
+    width: 400px;
+    margin: 35px 2em 35px 2em;
+  }
+
+  .img-character-info {
+    height: 140px;
+    width: 200px;
+  }
+
+  .container-info-chat {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 23px 16px 23px;
+    align-items: center;
+  }
+  .element-chat-inv {
+    height: 40px;
+    border-radius: 15px;
+    margin: -10px 249px 12px 265px;
+    width: 40%;
+  }
+  .chat-nav-groupal {
+    width: 100%;
+    height: 91px;
+  }
+}

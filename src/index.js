@@ -8,6 +8,8 @@ import Home from "./views/Home.js";
 import Error from "./views/Error.js";
 import ApiKeyView from "./views/ApiKeyView.js";
 import chatCharacter from "./views/ViewChatCharacter.js";
+import groupalChat from "./views/ViewGroup.js";
+import infoCharacter  from "./views/InfoCharacter.js";
 
 
 //Ejemplo de definición de rutas:
@@ -17,6 +19,8 @@ const routes = {
   "/error": Error,
   "/api-key": ApiKeyView, 
   "/chat-character": chatCharacter,
+  "/groupal-chat": groupalChat,
+  "/info-character": infoCharacter,
   // "/groupal-chat": 
 
 };
@@ -57,5 +61,6 @@ window.addEventListener("DOMContentLoaded", () => {
   buttonGroupalChat.addEventListener("click", function () {
     navigateTo("/groupal-chat");
   });
+
 
 });

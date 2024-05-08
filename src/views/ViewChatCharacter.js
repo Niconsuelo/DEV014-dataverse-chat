@@ -14,7 +14,7 @@ export const chatCharacter = (props) => {
   const viewChatCharacter = `
   <div class='view-character-chat'>
     <div class='chat-box'> 
-      <div class='chat-id'>
+      <div class='chat-id'> 
         <img src='${characterObject.imageUrl}' alt='${characterObject.name}' class='chat-img'>
         <div class='chat-id-text'>
           <p class='chat-name'>${characterObject.name}</p>
