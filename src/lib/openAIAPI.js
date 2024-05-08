@@ -35,11 +35,15 @@ export const communicateWithOpenAI = (messages) => {
     })
     .then((AIanswer) => {
       // Maneja los datos obtenidos de la respuesta
-      console.log("Datos del usuario recibidos:", AIanswer);
-      return AIanswer; // Puedes retornar los datos para encadenar más operaciones si es necesario
+      const chatAnswer = AIanswer.choices[0].message.content;
+      console.log(chatAnswer);
+      document.getElementById('ai-text-chat').innerHTML = chatAnswer;
     })
     .catch((error) => {
       // Maneja cualquier error que ocurra durante la solicitud o procesamiento de la respuesta
+      const errorAnswer = "Lo lamento, en este momento no puedo responder."
       console.error("Error durante la solicitud de datos del usuario:", error);
+      console.log(errorAnswer)
+      document.getElementById('ai-text-chat').innerHTML = errorAnswer;
     })
 }

@@ -50,26 +50,24 @@ export const chatCharacter = (props) => {
     `;
     formChat.innerHTML = formChat.innerHTML + userChat;
 
+
+    const OpenAIObject = {
+      message: inputText,
+      nameCharacter: characterObject.name
+    };
+    communicateWithOpenAI(OpenAIObject);
+    
     const systemChat = `
     <div class='container-msg-l'>
       <p class='name-msg'>${characterObject.name}</p>
       <div class='text-cloud-l'>
-        <p id='text-chat' class='text-msg'>
-          ${inputText}
+        <p id='ai-text-chat' class='text-msg'>
         </p>
       </div>
       <span class='time'>${timeClock()}</span>
     </div>
     `;
     formChat.innerHTML = formChat.innerHTML + systemChat;
-
-    //console.log(formChat);
-
-    const OpenAIObject = {
-      message: inputText,
-      nameCharacter: characterObject.name,
-    };
-    communicateWithOpenAI(OpenAIObject);
 
     //al hacer click o enter, se limpia el contenedor del input
     document.querySelector('#chat-input').value = '';
