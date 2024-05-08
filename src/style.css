@@ -35,7 +35,7 @@ header {
 nav {
   padding: 2%;
   width: inherit;
-  height: 8vh;
+  height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -272,14 +272,13 @@ dt {
 
 footer {
   margin-bottom: 0%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
   background-color: #000000;
-  color: #ffffff;
-  height: 60px;
-  line-height: 30px;
-  /* position: fixed; */
-  /* left: 0;
-  bottom: 0; */
+  color: whitesmoke;
+  height: 50px;
   width: 100%;
   padding: 1%;
 }
@@ -376,7 +375,6 @@ footer {
   height: 100%;
   margin: 0%;
   color: #0e0e0e;
-  /* background: rgba(255, 255, 255, 0.2); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -385,7 +383,7 @@ footer {
 
 .chat-id {
   width: 100%;
-  height: 65px;
+  height: 60px;
   margin: 0;
   background: white;
   display: flex;
@@ -398,7 +396,7 @@ footer {
 .chat-img {
   width: 50px;
   height: 50px;
-  border: solid black 0.5px;
+  border: solid #000000cc 0.2px;
   border-radius: 150px;
   object-fit: cover;
   margin: 2%;
@@ -414,17 +412,23 @@ footer {
 }
 
 .chat-name {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
+.chat-id-text > p2 {
+  font-size: smaller;
+  color: #adaaaa;
+  padding: 1.8px;
+}
+
 .form-chats {
-  margin: 2% 2% 0 0%;
+  margin: 1% 1% 0 0;
   width: 90%; 
   height: 90%;
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .name-msg {
@@ -449,7 +453,7 @@ footer {
 }
 
 .text-cloud-r {
-  background-color: #ffe9aa;
+  background-color: #ffeebf;
   color: #0e0e0e;
   border-radius: 10px;
   font-size: 14px;
@@ -461,7 +465,7 @@ footer {
 
 .text-cloud-l {
   background-color: #BC5C04;
-  opacity: 0.85;
+  opacity: 0.95;
   color: #0e0e0e;
   border-radius: 10px;
   font-size: 14px;
@@ -491,25 +495,25 @@ justify-content: space-between;
 align-items: center;
 margin: 2%;
 width: 80%;
-height: 80px;
+height: 60px;
 margin: 2%;
 padding: 1rem;
-border-radius: 15px;
+border-radius: 20px;
 background-color: whitesmoke;
 }
 
 .chat-input {
 width: 80%;
-height: 80px;
+height: 60px;
 margin: 2%;
 padding: 1px;
 font-family: inherit;
 font-size: inherit;
-border-radius: 15px;
+border-radius: 20px;
 border: none;
 background-color: whitesmoke;
 outline: none;
-overflow: scroll;
+overflow-y: scroll;
 }
 
 .send-button {

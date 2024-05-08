@@ -18,7 +18,7 @@ export const chatCharacter = (props) => {
         <img src='${characterObject.imageUrl}' alt='${characterObject.name}' class='chat-img'>
         <div class='chat-id-text'>
           <p class='chat-name'>${characterObject.name}</p>
-          <p>En línea</p>
+          <p2>En línea</p2>
         </div>
       </div>
       <div class='form-chats' id='form-chats'>
@@ -50,24 +50,48 @@ export const chatCharacter = (props) => {
     `;
     formChat.innerHTML = formChat.innerHTML + userChat;
 
-
     const OpenAIObject = {
       message: inputText,
       nameCharacter: characterObject.name
     };
-    communicateWithOpenAI(OpenAIObject);
-    
-    const systemChat = `
-    <div class='container-msg-l'>
-      <p class='name-msg'>${characterObject.name}</p>
-      <div class='text-cloud-l'>
-        <p id='ai-text-chat' class='text-msg'>
-        </p>
-      </div>
-      <span class='time'>${timeClock()}</span>
-    </div>
-    `;
-    formChat.innerHTML = formChat.innerHTML + systemChat;
+    communicateWithOpenAI(OpenAIObject)
+      .then((AIanswer) => {
+      // Maneja los datos obtenidos de la respuesta
+        const chatAnswer = AIanswer.choices[0].message.content;
+        console.log(chatAnswer)
+        const systemChat = `
+        <div class='container-msg-l'>
+          <p class='name-msg'>${characterObject.name}</p>
+          <div class='text-cloud-l'>
+            <p id='ai-text-chat' class='text-msg'>
+            ${chatAnswer}
+            </p>
+          </div>
+          <span class='time'>${timeClock()}</span>
+        </div>
+        `
+        formChat.innerHTML = formChat.innerHTML + systemChat;
+        // Scroll baja cada en cada ejecución del .then, es decir en cada emisión de respuesta de la IA
+        formChat.scrollTop = formChat.scrollHeight;
+      })
+      .catch((error) => {
+      // Maneja cualquier error que ocurra durante la solicitud o procesamiento de la respuesta
+        const errorAnswer = "Lo lamento, en este momento no puedo responder."
+        console.error("Error durante la solicitud de datos del usuario:", error);
+        const systemChat = `
+        <div class='container-msg-l'>
+          <p class='name-msg'>${characterObject.name}</p>
+          <div class='text-cloud-l'>
+            <p id='ai-text-chat' class='text-msg'>
+            ${errorAnswer}
+            </p>
+          </div>
+          <span class='time'>${timeClock()}</span>
+        </div>
+        `
+        formChat.innerHTML = formChat.innerHTML + systemChat;
+        formChat.scrollTop = formChat.scrollHeight;
+      })
 
     //al hacer click o enter, se limpia el contenedor del input
     document.querySelector('#chat-input').value = '';
@@ -77,6 +101,8 @@ export const chatCharacter = (props) => {
     if (event.key === 'Enter') {
       document.getElementById('send-button').click(); // Simula un clic en el botón
     }
+    // Scroll baja cada vez que se escribe en el input
+    formChat.scrollTop = formChat.scrollHeight;
   });
 
   return viewEl;
