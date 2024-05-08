@@ -32,7 +32,7 @@ export const card = (character) => {
     const characterId = character.id 
     // - Crear una nueva URL que incluya la ruta de la vista y el identificador respectivo (query param + identificador {key+value} === ?id=character.id). "Llevar" el identificador a la url
     const chatPath = '/chat-character' + '?id=' + characterId;
-    console.log(chatPath)
+    //console.log(chatPath)
     // - Actualizar el historial de navegación en la URL (con history.pushState({}, '', newUrl)) para sumar la nueva URL sin borrar el historial
     // - onURLchange
     navigateTo(chatPath, {id:characterId});

@@ -50,8 +50,6 @@ export const chatCharacter = (props) => {
     `;
     formChat.innerHTML = formChat.innerHTML + userChat;
 
-    
-
     //console.log(formChat);
 
     const OpenAIObject = {
@@ -76,9 +74,7 @@ export const chatCharacter = (props) => {
     </div>
     `;
 
-    formChat.innerHTML = formChat.innerHTML + systemChat;
-
-
+        formChat.innerHTML = formChat.innerHTML + systemChat;
 
         //crear un elemento div formChat.innethtml = ${response.choices[0].message.content}
       })

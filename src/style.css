@@ -496,16 +496,16 @@ justify-content: space-between;
 align-items: center;
 margin: 2%;
 width: 80%;
-height: 80px;
+height: 59px;
 margin: 2%;
 padding: 1rem;
-border-radius: 15px;
+border-radius: 20px;
 background-color: whitesmoke;
+border-style: solid;
 }
 
 .chat-input {
 width: 80%;
-height: 80px;
 margin: 2%;
 padding: 1px;
 font-family: inherit;
@@ -518,8 +518,8 @@ overflow: scroll;
 }
 
 .send-button {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   border-radius: 150px;
 }
 
