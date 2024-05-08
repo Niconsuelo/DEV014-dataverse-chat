@@ -422,6 +422,13 @@ footer {
 .chat-name {
   font-size: 1.1rem;
   font-weight: 700;
+  padding: 1.8px;
+}
+
+.chat-name-status{
+  font-size: smaller;
+  color: #adaaaa;
+  padding: 1.8px;
 }
 
 .form-chats {
@@ -478,6 +485,7 @@ footer {
 
 .text-msg {
   color: #000;
+  font-size: small;
 }
 
 .time {
