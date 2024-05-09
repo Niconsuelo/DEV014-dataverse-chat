@@ -591,8 +591,8 @@ footer {
 }
 
 .chat-img-groupal {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   border: solid black 0.5px;
   border-radius: 150px;
   object-fit: cover;
