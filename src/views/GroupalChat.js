@@ -22,7 +22,7 @@ export const groupalChat = (props) => {
   viewEl.innerHTML = viewChatCharacter;
 
   dataset.forEach((character) => {
-    const viewGroup = `
+    const characterId = `
            <div class='container-character-groupal'>
              <img src='${character.imageUrl}' alt='${character.name}' class='chat-img-groupal'>
              <div class='chat-id-text-group'>
@@ -33,8 +33,9 @@ export const groupalChat = (props) => {
      `;
     //con inner estamos reemplazando
     viewEl.querySelector("#character-group").innerHTML =
-      viewEl.querySelector("#character-group").innerHTML + viewGroup;
+      viewEl.querySelector("#character-group").innerHTML + characterId;
   });
+
   const clickSendMessageGruop = viewEl.querySelector("#button-chat-group");
 
   const formChatGroup = viewEl.querySelector("#form-chats-group");
@@ -53,6 +54,7 @@ export const groupalChat = (props) => {
     </div>
     `;
     formChatGroup.innerHTML = formChatGroup.innerHTML + userChatGroup;
+    formChatGroup.scrollTop = formChatGroup.scrollHeight;
 
     document.querySelector("#chat-input-group").value = "";
   });

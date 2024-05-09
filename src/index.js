@@ -8,6 +8,7 @@ import Home from "./views/Home.js";
 import Error from "./views/Error.js";
 import ApiKeyView from "./views/ApiKeyView.js";
 import chatCharacter from "./views/ViewChatCharacter.js";
+import groupalChat from "./views/GroupalChat.js";
 
 
 //Ejemplo de definición de rutas:
@@ -17,6 +18,7 @@ const routes = {
   "/error": Error,
   "/api-key": ApiKeyView, 
   "/chat-character": chatCharacter,
+  "/groupal-chat": groupalChat,
   // "/groupal-chat": 
 
 };
