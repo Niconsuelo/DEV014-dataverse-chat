@@ -49,8 +49,9 @@ export const chatCharacter = (props) => {
     </div>
     `;
     formChat.innerHTML = formChat.innerHTML + userChat;
+  
 
-    //console.log(formChat);
+   
 
     const OpenAIObject = {
       message: inputText,

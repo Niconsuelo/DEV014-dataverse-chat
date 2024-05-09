@@ -12,8 +12,8 @@ export const groupalChat = (props) => {
     </div>
     <div class='form-chats-group' id='form-chats-group'></div>
      <div class='chat-write'>
-       <input class='chat-input' id='chat-input' type='text' placeholder='Escribe tu mensaje aquí...' />
-       <button class='send-button' id='button-chat-ind'> > </button>
+       <input class='chat-input' id='chat-input-group' type='text' placeholder='Escribe tu mensaje aquí...' />
+       <button class='send-button' id='button-chat-group'> > </button>
      </div>
 </div>
 </div>
@@ -35,22 +35,34 @@ export const groupalChat = (props) => {
     viewEl.querySelector("#character-group").innerHTML =
       viewEl.querySelector("#character-group").innerHTML + viewGroup;
   });
-  const clickSendMessage = viewEl.querySelector("#button-chat-ind");
-  const formChat = viewEl.querySelector("#form-chats");
-  clickSendMessage.addEventListener("click", function () {
-    const inputText = document.getElementById("chat-input").value;
-    const userChat = `
+  const clickSendMessageGruop = viewEl.querySelector("#button-chat-group");
+
+  const formChatGroup = viewEl.querySelector("#form-chats-group");
+
+  clickSendMessageGruop.addEventListener("click", function () {
+    const inputTextGroup = document.getElementById("chat-input-group").value;
+    const userChatGroup = `
     <div class='container-msg-r'>
       <p class='name-msg'>Tú</p>
       <div class='text-cloud-r'>
         <p id='text-chat' class='text-msg'>
-        ${inputText}
+        ${inputTextGroup}
         </p>
       </div>
       <span class='time'>${timeClock()} </span>
     </div>
     `;
-    formChat.innerHTML = formChat.innerHTML + userChat;
+    formChatGroup.innerHTML = formChatGroup.innerHTML + userChatGroup;
+
+    document.querySelector("#chat-input-group").value = "";
+
+    viewEl
+      .querySelector("#chat-input-group")
+      .addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          document.getElementById("button-chat-group").click();
+        }
+      });
   });
   return viewEl;
 };
