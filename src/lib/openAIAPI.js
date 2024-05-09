@@ -14,7 +14,7 @@ export const communicateWithOpenAI = (messages) => {
       model: 'gpt-3.5-turbo',
       messages: [{
         'role': 'system', 
-        'content': `You are ${messages.nameCharacter} of the anime Hunter X Hunter. Just answer questions that are related to your character and its history`
+        'content': `You are ${messages.nameCharacter} of the anime Hunter X Hunter. Just answer questions that are related to your character and its history. Answer in equal user's language`
       },
       {
         'role': 'user',
@@ -24,7 +24,7 @@ export const communicateWithOpenAI = (messages) => {
   }
     
 
-  fetch(URL, REQUEST)
+  const fetchApi = fetch(URL, REQUEST)
     .then((response) => {
       // Primero, verifica si la respuesta es exitosa
       if (!response.ok) {
@@ -33,13 +33,5 @@ export const communicateWithOpenAI = (messages) => {
       }
       return response.json(); // Parsea y retorna los datos JSON si es exitosa
     })
-    .then((AIanswer) => {
-      // Maneja los datos obtenidos de la respuesta
-      console.log("Datos del usuario recibidos:", AIanswer);
-      return AIanswer; // Puedes retornar los datos para encadenar más operaciones si es necesario
-    })
-    .catch((error) => {
-      // Maneja cualquier error que ocurra durante la solicitud o procesamiento de la respuesta
-      console.error("Error durante la solicitud de datos del usuario:", error);
-    })
+  return fetchApi;
 }
