@@ -55,7 +55,7 @@ export const groupalChat = (props) => {
     formChatGroup.innerHTML = formChatGroup.innerHTML + userChatGroup;
 
     document.querySelector("#chat-input-group").value = "";
-
+  });
     viewEl
       .querySelector("#chat-input-group")
       .addEventListener("keydown", function (event) {
@@ -63,7 +63,7 @@ export const groupalChat = (props) => {
           document.getElementById("button-chat-group").click();
         }
       });
-  });
+ 
   return viewEl;
 };
 
