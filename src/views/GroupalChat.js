@@ -86,7 +86,6 @@ export const groupalChat = () => { // Se removió parametro props porque no se e
           `
           formChatGroup.innerHTML = formChatGroup.innerHTML + systemChat;
           formChatGroup.scrollTop = formChatGroup.scrollHeight;
-          console.log(`${dataset[index].name}: ${response.choices[0].message.content}`)
         })
       })
       .catch((error) => { // PREGUNTAR DE TODOS MODOS POR LA PAUSA DE DEBUGGING QUE SE ACTIVÓ
@@ -104,6 +103,7 @@ export const groupalChat = () => { // Se removió parametro props porque no se e
       </div>
       `
         formChatGroup.innerHTML = formChatGroup.innerHTML + systemChat;
+        formChatGroup.scrollTop = formChatGroup.scrollHeight;
       })
 
     document.querySelector("#chat-input-group").value = "";

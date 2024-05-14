@@ -101,8 +101,6 @@ export const chatCharacter = (props) => {
     if (event.key === 'Enter') {
       document.getElementById('send-button').click(); // Simula un clic en el botón
     }
-    // Scroll baja cada vez que se escribe en el input
-    formChat.scrollTop = formChat.scrollHeight;
   });
 
   return viewEl;
