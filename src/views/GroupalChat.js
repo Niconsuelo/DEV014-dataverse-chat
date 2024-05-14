@@ -1,7 +1,9 @@
 import dataset from "../data/dataset.js";
 import { timeClock } from "../lib/extraFunctions.js";
+import { communicateWithOpenAI } from "../lib/openAIAPI.js";
 
-export const groupalChat = (props) => {
+export const groupalChat = () => { // Se removió parametro props porque no se estaba usando.
+
   const viewEl = document.createElement("div");
   const viewChatCharacter = `
 <div class='view-character-chat'>
@@ -10,7 +12,7 @@ export const groupalChat = (props) => {
         <div class='character-gruop' id='character-group'>
         </div>
     </div>
-    <div class='form-chats-group' id='form-chats-group'></div>
+    <div class='form-chats' id='form-chats-group'></div>
      <div class='chat-write'>
        <input class='chat-input' id='chat-input-group' type='text' placeholder='Escribe tu mensaje aquí...' />
        <button class='send-button' id='button-chat-group'> > </button>
@@ -27,7 +29,6 @@ export const groupalChat = (props) => {
              <img src='${character.imageUrl}' alt='${character.name}' class='chat-img-groupal'>
              <div class='chat-id-text-group'>
                <p class='chat-name-groupal'>${character.name}</p>
-               <p class='line-name-groupal'>En línea</p>
              </div>
            </div>
      `;
@@ -37,7 +38,6 @@ export const groupalChat = (props) => {
   });
 
   const clickSendMessageGruop = viewEl.querySelector("#button-chat-group");
-
   const formChatGroup = viewEl.querySelector("#form-chats-group");
 
   clickSendMessageGruop.addEventListener("click", function () {
@@ -56,15 +56,66 @@ export const groupalChat = (props) => {
     formChatGroup.innerHTML = formChatGroup.innerHTML + userChatGroup;
     formChatGroup.scrollTop = formChatGroup.scrollHeight;
 
+    const chatAll = dataset.map((character)=> {
+      const OpenAIObject = {
+        message: inputTextGroup,
+        nameCharacter: character.name
+      }; 
+      communicateWithOpenAI(OpenAIObject)
+        .then((AIanswer) => {
+          // Maneja los datos obtenidos de la respuesta
+          AIanswer.choices[0].message.content;
+          // console.log(chatAnswer)
+        })
+        //*DEBERÍAMOS MANEJAR UN CATCH EN ESTE SCOPE?
+      return communicateWithOpenAI(OpenAIObject)
+    })
+    Promise.all(chatAll)
+      .then((chatAll) => {
+        chatAll.forEach((response, index) => {
+          const systemChat = `
+          <div class='container-msg-l'>
+            <p class='name-msg'>${dataset[index].name}</p>
+            <div class='text-cloud-l'>
+              <p id='ai-text-chat' class='text-msg'>
+              ${response.choices[0].message.content}
+              </p>
+            </div>
+            <span class='time'>${timeClock()}</span>
+          </div>
+          `
+          formChatGroup.innerHTML = formChatGroup.innerHTML + systemChat;
+          formChatGroup.scrollTop = formChatGroup.scrollHeight;
+          console.log(`${dataset[index].name}: ${response.choices[0].message.content}`)
+        })
+      })
+      .catch((error) => { // PREGUNTAR DE TODOS MODOS POR LA PAUSA DE DEBUGGING QUE SE ACTIVÓ
+        console.error(error)
+        const errorAnswer = 'Lo siento, en este momento no estamos disponibles.'
+        const systemChat = `
+      <div class='container-msg-l'>
+        <p class='name-msg'>Participantes del chat</p>
+        <div class='text-cloud-l'>
+          <p id='ai-text-chat' class='text-msg'>
+          ${errorAnswer}
+          </p>
+        </div>
+        <span class='time'>${timeClock()}</span>
+      </div>
+      `
+        formChatGroup.innerHTML = formChatGroup.innerHTML + systemChat;
+      })
+
     document.querySelector("#chat-input-group").value = "";
   });
-    viewEl
-      .querySelector("#chat-input-group")
-      .addEventListener("keydown", function (event) {
-        if (event.key === "Enter") {
-          document.getElementById("button-chat-group").click();
-        }
-      });
+
+  viewEl
+    .querySelector("#chat-input-group")
+    .addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        document.getElementById("button-chat-group").click();
+      }
+    });
  
   return viewEl;
 };
