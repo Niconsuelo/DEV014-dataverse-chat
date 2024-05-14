@@ -14,7 +14,7 @@ export const communicateWithOpenAI = (messages) => {
       messages: [
         {
           role: "system",
-          content: `You are ${messages.nameCharacter} of the anime Hunter X Hunter. Just answer questions that are related to your character and its history. Answer in equal user's language`,
+          content: `You are ${messages.nameCharacter} of the anime Hunter X Hunter. Just answer questions that are related to your character and its history. Answer in spanish`,
         },
         {
           role: "user",
@@ -24,18 +24,19 @@ export const communicateWithOpenAI = (messages) => {
     }),
   };
 
-  const fetchApi = fetch(URL, REQUEST).then((response) => {
+  const fetchApi = fetch(URL, REQUEST)
+    .then((response) => {
     // Primero, verifica si la respuesta es exitosa
-    if (!response.ok) {
+      if (!response.ok) {
       // Lanza un error si la respuesta no es
-      throw new Error("No se pudo obtener los datos: " + response.statusText);
-    }
-    return response
-      .json() // Parsea y retorna los datos JSON si es exitosa
+        throw new Error("No se pudo obtener los datos: " + response.statusText);
+      }
+      return response
+        .json() // Parsea y retorna los datos JSON si es exitosa
 
-      .catch((error) => {
-        console.error("Error durante la solicitud de datos:", error);
-      });
-  });
+        .catch((error) => {
+          console.error("Error durante la solicitud de datos:", error);
+        });
+    });
   return fetchApi;
 };
