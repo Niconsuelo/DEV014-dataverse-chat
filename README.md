@@ -5,7 +5,7 @@ El mundo del anime no deja de expandirse y evolucionar, capturando la imaginaci�
 Nuestra aplicación está diseñada para conectar a los aficionados del anime, ofreciendo una plataforma dinámica y accesible para explorar, descubrir y enriquecerse con este gran universo.
 
 
-![prompting](../DEV014-dataverse-chat/src/assets/source.webp)
+![Alt Text](https://spoilertime.com/wp-content/uploads/2019/05/source.gif)
 
 
 
@@ -21,17 +21,17 @@ HunterxVersexChat ha sido desplegado en ....
 
 
 ## Funcionalidad
-> **Visualización de datos:** Acceso a información especifica de los 24 personajes, en los que se podrá visualizar caracteristicas que hacen único a cada personaje.
+**Visualización de datos:** Acceso a información especifica de los 24 personajes, en los que se podrá visualizar caracteristicas que hacen único a cada personaje.
 
-> **Filtrado personalizado:** Visualización de los personajes según su tipo de Nen y/o rol dentro del anime.
+**Filtrado personalizado:** Visualización de los personajes según su tipo de Nen y/o rol dentro del anime.
 
-> **Orden personalizado:** Permite visualizar el listado de 24 personajes en orden ascendiente o descendiente según el criterio del usuario.
+**Orden personalizado:** Permite visualizar el listado de 24 personajes en orden ascendiente o descendiente según el criterio del usuario.
 
-> **Estadistica personalizada:** Acceso a información exclusiva sobre la cantidad de personajes que existen en Hunter X, según su tipo de Nen. 
+**Estadistica personalizada:** Acceso a información exclusiva sobre la cantidad de personajes que existen en Hunter X, según su tipo de Nen. 
 
-> **Chat individual:** Permite interacción entre usuario y personajes de manera individual para obtener información precisa sobre cada uno de los personajes.
+**Chat individual:** Permite interacción entre usuario y personajes de manera individual para obtener información precisa sobre cada uno de los personajes.
 
-> **Chat grupal:** Permite la interacción entre el usuario y los 24 personajes del anime al mismo tiempo.
+**Chat grupal:** Permite la interacción entre el usuario y los 24 personajes del anime al mismo tiempo.
 
 
 
