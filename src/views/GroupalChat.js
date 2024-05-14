@@ -61,14 +61,14 @@ export const groupalChat = () => { // Se removió parametro props porque no se e
         message: inputTextGroup,
         nameCharacter: character.name
       }; 
-      communicateWithOpenAI(OpenAIObject)
+      return communicateWithOpenAI(OpenAIObject)
         .then((AIanswer) => {
           // Maneja los datos obtenidos de la respuesta
-          AIanswer.choices[0].message.content;
+          return AIanswer.choices[0].message.content; // todo lo que se retorne dentro de un .then o un .catch, es en forma de promesa
           // console.log(chatAnswer)
         })
         //*DEBERÍAMOS MANEJAR UN CATCH EN ESTE SCOPE?
-      return communicateWithOpenAI(OpenAIObject)
+      //return communicateWithOpenAI(OpenAIObject)
     })
     Promise.all(chatAll)
       .then((chatAll) => {
@@ -78,7 +78,7 @@ export const groupalChat = () => { // Se removió parametro props porque no se e
             <p class='name-msg'>${dataset[index].name}</p>
             <div class='text-cloud-l'>
               <p id='ai-text-chat' class='text-msg'>
-              ${response.choices[0].message.content}
+              ${response}
               </p>
             </div>
             <span class='time'>${timeClock()}</span>
