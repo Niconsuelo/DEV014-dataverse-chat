@@ -4,6 +4,7 @@ import { communicateWithOpenAI } from '../lib/openAIAPI.js';
 // Para poder renderizar las propiedades específicas del personaje q le hagamos click, aquí debemos acceder a la data
 export const chatCharacter = (props) => {
   let characterObject = {};
+  //permite saber que personaje hablará con openAI
   dataset.forEach(character => {
     if (character.id === props.id) {
       characterObject = character
