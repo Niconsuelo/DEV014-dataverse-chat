@@ -75,9 +75,9 @@ En función a crear una mejor experiencia de usuario, se han definido los siguie
 
 En la pantalla principal, se encuentra una vista general de la aplicación, la cual contendrá:
 
-Aunteticador de API key
-Acceso directo para iniciar comunicación con todos los personajes del anime.
-Visualización de 24 card con los personajes principales del anime:
+- Aunteticador de API key
+- Acceso directo para iniciar comunicación con todos los personajes del anime.
+- Visualización de 24 card con los personajes principales del anime:
 - Al hacer click sobre la card, se ejecuta el cambio de vista para iniciar chat individual con el personaje clickeado.
 
 
