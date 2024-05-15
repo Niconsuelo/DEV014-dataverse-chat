@@ -58,7 +58,7 @@ export const chatCharacter = (props) => {
       .then((AIanswer) => {
       // Maneja los datos obtenidos de la respuesta
         const chatAnswer = AIanswer.choices[0].message.content;
-        console.log(chatAnswer)
+        //console.log(chatAnswer)
         const systemChat = `
         <div class='container-msg-l'>
           <p class='name-msg'>${characterObject.name}</p>
@@ -107,3 +107,5 @@ export const chatCharacter = (props) => {
 };
 
 export default chatCharacter;
+
+

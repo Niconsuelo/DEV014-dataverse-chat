@@ -1,5 +1,7 @@
 import { getApiKey } from "./apiKey.js";
 
+
+
 export const communicateWithOpenAI = (messages) => {
   const URL = "https://api.openai.com/v1/chat/completions";
   const API_KEY = getApiKey();
@@ -29,7 +31,7 @@ export const communicateWithOpenAI = (messages) => {
     // Primero, verifica si la respuesta es exitosa
       if (!response.ok) {
       // Lanza un error si la respuesta no es
-        throw new Error("No se pudo obtener los datos: " + response.statusText);
+        throw new Error("No se pudo obtener los datos");
       }
       return response
         .json() // Parsea y retorna los datos JSON si es exitosa
