@@ -38,7 +38,7 @@ A continuación se detallan cada una de las funcionalidades desarrolladas:
 - **Chat grupal:** Permite la interacción entre el usuario y los 24 personajes del anime al mismo tiempo.
 
 
-![Chat grupal view] (src/assets/responsive.gif)
+![Chat grupal view] (.src/assets/responsive.gif)
 
 
 ## Enfoque del proyecto
