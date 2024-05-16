@@ -13,8 +13,8 @@ Nuestra aplicación está diseñada para conectar a los aficionados del anime, o
 Siendo ésta una segunda versión de [HunterxVerse](https://milenpg.github.io/DEV014-Dataverse/src/), se ha desarrollado una nueva funcionalidad que permite interactuar con cada uno de los personajes a través de un chatbox individual. Además, como segunda instancia, se ha integrado un chatbox grupal, en donde los usuarios podrán comunicarse de manera directa con todos los personajes del anime al mismo tiempo, permitiendo enriquecer la experiencia interactiva.
 
 ## Desarrolladores:
-- :octocat: [Nicole Aburto O.](https://github.com/Niconsuelo)
-- :octocat: [Milén Palma G.](https://github.com/MilenPG)
+ :octocat: [Nicole Aburto O.](https://github.com/Niconsuelo)
+ :octocat: [Milén Palma G.](https://github.com/MilenPG)
 
 ## Consideraciones generales
 - En función de mejorar el rendimiento, la facilidad de uso y eficiencia de desarrollo, el proyecto se ha desplegado en [Vercel](https://vercel.com/).
@@ -83,13 +83,23 @@ Elaboración de test unitarios: almacenamiento API key y uso de mock para solici
 
 Las características específicas del diseño están basadas en un proceso investigativo que se resolvió en la creación de un contenido diseñado estratégicamente, que utiliza elementos visuales relativos a la serie. Esto permite que las usuarias puedan envolverse en el mundo de Hunter x Hunter, enriqueciendo su experiencia.
 
-**Vista chat grupal:**
-Desktop
-![prompting](https://i.ibb.co/WG26Kq0/i-Pad-1715150163629.jpg)
+Desde este [*primer prototipo de alta fidelidad*](
+https://www.figma.com/proto/3Rf37tPhYsVPqcpihtN1kx/Hunter-X?node-id=215-444&t=8L1CREw0YxTBiEQC-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=215%3A444&show-proto-sidebar=1), levantamos un testeo de usabilidad. A partir de las sugerencias de quienes participaron, se realizaron las modificaciones que nos llevaron al producto final. 
 
-**Vista Chat Grupal:**
-Mobile
-![prompting](https://i.ibb.co/Hr0wZxt/i-Phone-13-Pro-Max-1715150163514.jpg)
+
+**Vista chat grupal:**
+
+*Mobile*
+![prompting](https://github.com/MilenPG/DEV014-dataverse-chat/blob/main/src/assets/gchatMobile.png.jpeg?raw=true)
+
+*Tablet*
+![prompting](https://github.com/MilenPG/DEV014-dataverse-chat/blob/main/src/assets/gchatTablet.png.jpeg?raw=true)
+
+*Desktop*
+![prompting](https://github.com/MilenPG/DEV014-dataverse-chat/blob/main/src/assets/gchatDesktop.png.jpeg?raw=true)
+
+
+
 
 <!-- ## How does it work?
 
