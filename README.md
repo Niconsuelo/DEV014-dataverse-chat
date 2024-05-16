@@ -87,15 +87,15 @@ Desde este [*primer prototipo de alta fidelidad*](
 https://www.figma.com/proto/3Rf37tPhYsVPqcpihtN1kx/Hunter-X?node-id=215-444&t=8L1CREw0YxTBiEQC-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=215%3A444&show-proto-sidebar=1), levantamos un testeo de usabilidad. A partir de las sugerencias de quienes participaron, se realizaron las modificaciones que nos llevaron al producto final. 
 
 
-**Vista chat grupal:**
+#### Vista chat grupal:
 
-*Mobile*
+**Mobile**
 ![prompting](https://github.com/MilenPG/DEV014-dataverse-chat/blob/main/src/assets/gchatMobile.png.jpeg?raw=true)
 
-*Tablet*
+**Tablet**
 ![prompting](https://github.com/MilenPG/DEV014-dataverse-chat/blob/main/src/assets/gchatTablet.png.jpeg?raw=true)
 
-*Desktop*
+**Desktop**
 ![prompting](https://github.com/MilenPG/DEV014-dataverse-chat/blob/main/src/assets/gchatDesktop.png.jpeg?raw=true)
 
 
