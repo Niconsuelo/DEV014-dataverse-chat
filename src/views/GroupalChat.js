@@ -9,7 +9,7 @@ export const groupalChat = () => { // Se removió parametro props porque no se e
 <div class='view-character-chat'>
 <div class='chat-box'>
     <div class='chat-nav-groupal'>
-        <div class='character-gruop' id='character-group'>
+        <div class='character-group' id='character-group'>
         </div>
     </div>
     <div class='form-chats' id='form-chats-group'></div>
@@ -37,10 +37,10 @@ export const groupalChat = () => { // Se removió parametro props porque no se e
       viewEl.querySelector("#character-group").innerHTML + characterId;
   });
 
-  const clickSendMessageGruop = viewEl.querySelector("#button-chat-group");
+  const clickSendMessageGroup = viewEl.querySelector("#button-chat-group");
   const formChatGroup = viewEl.querySelector("#form-chats-group");
 
-  clickSendMessageGruop.addEventListener("click", function () {
+  clickSendMessageGroup.addEventListener("click", function () {
     const inputTextGroup = document.getElementById("chat-input-group").value;
     const userChatGroup = `
     <div class='container-msg-r'>

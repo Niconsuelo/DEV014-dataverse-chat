@@ -7,8 +7,10 @@ export const card = (character) => {
     <li class ="card-li" itemscope itemtype="Personaje" id=${character.id}>
       <div class="card">
         <div class="imgs-container"> 
+          <span>Chatea conmigo...</span>
           <a id="click-img">
             <img src=${character.imageUrl} alt=${character.name} class="card-img">
+            
           </a>
           <img src="https://d100mj7v0l85u5.cloudfront.net/s3fs-public/2022-10/futuro-codigo-de-barras.png" alt="barcode" class="barcode-img">
         </div> 

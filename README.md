@@ -37,24 +37,24 @@ A continuación se detallan cada una de las funcionalidades desarrolladas:
 ## Tecnologías y recursos
 El proyecto se ha desarrollado en base a la siguiente estructura de archivos:
 
-Insertar foto boilerplate del proyecto.
+**/ Insertar foto boilerplate del proyecto /**
 
 Para desarrollar esta segunda versión de HunterxVersexChat, se ha utilizado diferentes herramientas y tecnologias que permiten que el proyecto cumpla con los requerimientos técnicos especificos, además permite obtener un producto de alta calidad en cuanto a la experiencia de los usuarios:
 
-**Manejo API key**
-Permite obtener un mecanismo simple de autenticación para acceder a servicios externos, en este caso API OpenAI. Asegura que la solicitud a la API provienen de una fuente autorizada.
+**- Manejo API key**
+Permite obtener un mecanismo simple de autenticación para acceder a servicios externos, en este caso, la API OpenAI. Almacenándose en el local storage, asegura que la solicitud a la API provienen de una fuente autorizada. 
 
-**SPA**
-El uso del modelo Single PAge Aplication permite interactuar con el usuario reescribiendo dinamicamente la pagina actual sin necesidad de recargar la web entera. Esto permite que mejore la experiencia de usuario en cuanto la rapidez y fluidez en el manejo.
+**- SPA**
+El uso del modelo Single Page Application permite interactuar con el usuario reescribiendo dinamicamente la pagina actual sin necesidad de recargar la web entera. Esto permite que mejore la experiencia de usuario en cuanto la rapidez y fluidez en el manejo.
 
-**Modularización**
+**- Modularización**
 Manejo de componentes para mejorar la estructura y organización de la aplicación. Facilita el entendimiento y permite manejar correctamente el funcionamiento del código.
 
-**Petición HTTP**
+**- Petición HTTP**
 
-**Figma**
+**- Figma**
 
-**Test**
+**- Test**
 
 
 ## Diseño de interfaz
