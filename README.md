@@ -123,5 +123,5 @@ En la pantalla principal, se encuentra una vista general de la aplicación, la c
 
 *** -->
 
-**MilNic &copy; Hunter X Verse**
+***MilNic 2024 &copy; Hunter X Verse***
 
