@@ -90,12 +90,18 @@ https://www.figma.com/proto/3Rf37tPhYsVPqcpihtN1kx/Hunter-X?node-id=215-444&t=8L
 #### Vista chat grupal:
 
 **Mobile**
+
 ![prompting](https://github.com/MilenPG/DEV014-dataverse-chat/blob/main/src/assets/gchatMobile.png.jpeg?raw=true)
 
+
+
 **Tablet**
+
 ![prompting](https://github.com/MilenPG/DEV014-dataverse-chat/blob/main/src/assets/gchatTablet.png.jpeg?raw=true)
 
+
 **Desktop**
+
 ![prompting](https://github.com/MilenPG/DEV014-dataverse-chat/blob/main/src/assets/gchatDesktop.png.jpeg?raw=true)
 
 
