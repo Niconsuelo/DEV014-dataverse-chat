@@ -7,6 +7,7 @@ export const card = (character) => {
     <li class ="card-li" itemscope itemtype="Personaje" id=${character.id}>
       <div class="card">
         <div class="imgs-container"> 
+          <span>Chatea conmigo...</span>
           <a id="click-img">
             <img src=${character.imageUrl} alt=${character.name} class="card-img">
           </a>
