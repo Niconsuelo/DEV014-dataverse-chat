@@ -34,9 +34,6 @@ A continuación se detallan cada una de las funcionalidades desarrolladas:
 ![Alt Text](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2dtdmF1d3JscmFwZjl1ajJwb3FpbGl5aDJxM3Z4eXFvNnk1NmUxcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4jamu9obYceTjTNptY/giphy.gif)
 
 
-## Enfoque del proyecto
-
-
 ## Tecnologías y recursos
 El proyecto se ha desarrollado en base a la siguiente estructura de archivos:
 
