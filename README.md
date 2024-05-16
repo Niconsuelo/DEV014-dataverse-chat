@@ -13,7 +13,9 @@ Nuestra aplicación está diseñada para conectar a los aficionados del anime, o
 Siendo ésta una segunda versión de [HunterxVerse](https://milenpg.github.io/DEV014-Dataverse/src/), se ha desarrollado una nueva funcionalidad que permite interactuar con cada uno de los personajes a través de un chatbox individual. Además, como segunda instancia, se ha integrado un chatbox grupal, en donde los usuarios podrán comunicarse de manera directa con todos los personajes del anime al mismo tiempo, permitiendo enriquecer la experiencia interactiva.
 
 ## Desarrolladores:
+
  :octocat: [Nicole Aburto O.](https://github.com/Niconsuelo)
+
  :octocat: [Milén Palma G.](https://github.com/MilenPG)
 
 ## Consideraciones generales
