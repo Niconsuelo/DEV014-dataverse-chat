@@ -36,15 +36,20 @@ setRoutes(routes);
 window.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
   setRootEl(root);
-
+//obtiene parte de url - ruta
   const pathnameRoute = window.location.pathname;
+  // obtiene parametros (queryparams)
   const queryParamsRoute = window.location.search;
+   //forma url actual
   const currentURL = () => {
+    //url actual maneja cambios
     onURLChange(pathnameRoute + queryParamsRoute);
   }
+ 
   currentURL(); 
   window.addEventListener("popstate", currentURL); // ESTUDIAR* 
 
+  
   const navToHome = document.querySelector("#to-home");
   navToHome.addEventListener("click", function () {
     navigateTo("/");

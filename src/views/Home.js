@@ -15,7 +15,7 @@ const Home = () => {
 
   const cardsContainer = document.createElement("div"); // *1. CREAR UN NUEVO CONTENEDOR EXCLUSIVO PARA LAS CARDS (UL)
   const renderCards = cards(dataset);
-  cardsContainer.appendChild(renderCards); // *2. AL CONTENEDOR CREADO, INSERTAMOS LAS CARDS RENDERIZADAS (UL) 
+  cardsContainer.appendChild(renderCards); // *2. AL CONTENEDOR CREADO, INSERTAMOS LAS CARDS RENDERIZADAS (UL)
   viewEl.appendChild(cardsContainer); // *3. AL CONTENEDOR PADRE DE NUESTRA VISTA HOME.JS (A SU VEZ, HIJO DE ROOT) LE INSERTAMOS EL CONTENEDOR CON LAS CARDS RENDERIZADAS
   //viewEl.textContent = `Welcome to the home page! ${props.bella}`; --pruebas de Nico--
 
@@ -55,7 +55,7 @@ const Home = () => {
     cardsContainer.innerHTML = "";
     cardsContainer.appendChild(cards(result));
   });
-  
+
   sortSelect.addEventListener("change", function (event) {
     let result = dataset;
     const optionFilter = selectfilterOcupation.value;
@@ -84,9 +84,11 @@ const Home = () => {
 
   const statButton = viewEl.querySelector("#stats-button");
   statButton.addEventListener("click", function () {
-    window.location.href = "index.html#stats-h";
+    const statsSection = document.getElementById("stats-h");
+    statsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    //window.location.href = "index.html#stats-h";
   });
-  
+
   const newSection = document.createElement("section");
   const renderStats = stats(dataset);
   newSection.innerHTML = renderStats;

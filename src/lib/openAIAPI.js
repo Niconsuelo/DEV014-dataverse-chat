@@ -1,7 +1,5 @@
 import { getApiKey } from "./apiKey.js";
 
-
-
 export const communicateWithOpenAI = (messages) => {
   const URL = "https://api.openai.com/v1/chat/completions";
   const API_KEY = getApiKey();
