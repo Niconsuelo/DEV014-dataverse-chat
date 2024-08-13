@@ -11,7 +11,7 @@ export const card = (character) => {
           <a id="click-img">
             <img src=${character.imageUrl} alt=${character.name} class="card-img">
           </a>
-          <img src="https://d100mj7v0l85u5.cloudfront.net/s3fs-public/2022-10/futuro-codigo-de-barras.png" alt="barcode" class="barcode-img">
+          <img src="https://github.com/MilenPG/DEV014-dataverse-chat/blob/image-migration/src/assets/card_barcode.png?raw=true" alt="barcode" class="barcode-img">
         </div> 
         <div class="card-text"> 
           <h3 itemprop="name" class="card-tittle">${character.name}</h3>
