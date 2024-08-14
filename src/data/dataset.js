@@ -33,7 +33,7 @@ export default [
     "id": "03-killua",
     "name": "Killua Zoldyck",
     "shortDescription": "Es el coprotagonista y mejor amigo de Gon Freecss. Es el tercero de los cinco hijos de la familia Zoldyck.",
-    "description": "Killua Zoldyck es el tercer hijo de la conocida familia dehttps://github.com/MilenPG/DEV014-dataverse-chat/blob/image-migration/src/assets/killua.png?raw=true asesinos Zoldyck. Para escapar de la herencia-mandato familiar, huye de su hogar y, por pasar el rato, llega al examen de Cazador, donde conoce a Gon. Pese a su buen rendimiento durante la prueba, por determinadas circunstancias, Killua no concluye su examen junto a Gon, mas obtiene su licencia de cazador un año después. Posee una agilidad extraordinaria y una fuerza que lo vuelven una máquina de matar. Aunque trate de esconderlo, siente afecto por Gon, ya que él fue la primera persona en interesarse genuinamente por él.",
+    "description": "Killua Zoldyck es el tercer hijo de la conocida familia de asesinos Zoldyck. Para escapar de la herencia-mandato familiar, huye de su hogar y, por pasar el rato, llega al examen de Cazador, donde conoce a Gon. Pese a su buen rendimiento durante la prueba, por determinadas circunstancias, Killua no concluye su examen junto a Gon, mas obtiene su licencia de cazador un año después. Posee una agilidad extraordinaria y una fuerza que lo vuelven una máquina de matar. Aunque trate de esconderlo, siente afecto por Gon, ya que él fue la primera persona en interesarse genuinamente por él.",
     "imageUrl": "https://github.com/MilenPG/DEV014-dataverse-chat/blob/image-migration/src/assets/killua.png?raw=true",
     "facts": {
       "nenType": "Transmutador",
