@@ -8,11 +8,11 @@ Nuestra aplicación está diseñada para conectar a los aficionados del anime, o
 
 
 ## Descripción del proyecto
- [HunterxVersexChat](https://hunterxversexchat.vercel.app/)  es una SPA intuitiva, |informativa e interactiva, que permite a usuarios objetivos acceder rápidamente a información detallada y organizada de 24 personajes, algunos de los principales del complejo universo del anime ["Hunter x Hunter"](https://es.wikipedia.org/wiki/Hunter_%C3%97_Hunter).
+ [HunterxVersexChat](https://hunterxversexchat.vercel.app/)  es una SPA intuitiva, informativa e interactiva, que permite a usuarios objetivos acceder rápidamente a información detallada y organizada de 24 personajes, algunos de los principales del complejo universo del anime ["Hunter x Hunter"](https://es.wikipedia.org/wiki/Hunter_%C3%97_Hunter).
 
 Siendo ésta una segunda versión de [HunterxVerse](https://milenpg.github.io/DEV014-Dataverse/src/), se ha desarrollado una nueva funcionalidad que permite interactuar con cada uno de los personajes a través de un chatbox individual. Además, como segunda instancia, se ha integrado un chatbox grupal, en donde los usuarios podrán comunicarse de manera directa con todos los personajes del anime al mismo tiempo, permitiendo enriquecer la experiencia interactiva.
 
-## Desarrolladores:
+## Desarrolladores
 
  :octocat: [Nicole Aburto O.](https://github.com/Niconsuelo)
 
@@ -123,5 +123,5 @@ En la pantalla principal, se encuentra una vista general de la aplicación, la c
 
 *** -->
 
-**MilNic &copy; Hunter X Verse**
+***MilNic 2024 &copy; Hunter X Verse***
 

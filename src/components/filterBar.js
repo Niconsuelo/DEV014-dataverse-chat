@@ -29,7 +29,7 @@ export const filterBar = () => {
         </select>
         <button id="cleaner-button" data-testid="button-clear">LIMPIAR FILTROS</button>
         <button id="stats-button">
-          <img src="https://static.wikia.nocookie.net/villains/images/1/19/The_Phantom_Troupe_Logo.png/" 
+          <img src="https://github.com/MilenPG/DEV014-dataverse-chat/blob/image-migration/src/assets/spider_button.png?raw=true" 
           alt="spider-button" class="button-img"></button>
     </div>
 `;
